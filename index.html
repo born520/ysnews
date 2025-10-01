@@ -47,13 +47,12 @@
     
     .header-image-wrapper {
       flex: 0 0 400px;
-      display: flex;
-      align-items: center;
     }
     
     .header-image-wrapper .header-image {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
@@ -62,7 +61,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 15px;
     }
     
     .info-wrapper-standalone {
@@ -80,6 +79,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      min-height: 0;
     }
     
     .greeting-section {
@@ -100,12 +100,13 @@
     }
     
     .info-content {
-      font-size: clamp(0.9em, 1.8vw, 1.1em);
-      line-height: 1.7;
+      font-size: clamp(0.85em, 1.5vw, 1em);
+      line-height: 1.6;
       color: #2c3e50;
       flex: 1;
       display: flex;
       align-items: center;
+      overflow-y: auto;
     }
     
     .header-image-center {
@@ -242,6 +243,11 @@
         width: 100%;
       }
       
+      .header-image-wrapper .header-image {
+        height: auto;
+        object-fit: contain;
+      }
+      
       .info-wrapper {
         gap: 10px;
       }
@@ -297,7 +303,7 @@
       
       .mobile-news-item {
         background-color: white;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         border-radius: 5px;
         border-left: 4px solid #3498db;
         overflow: hidden;
@@ -307,27 +313,13 @@
         display: none;
       }
       
-      .media-badge {
-        display: inline-block;
-        background-color: #3498db;
-        color: white;
-        padding: 4px 10px;
-        font-size: 0.75em;
-        border-radius: 3px;
-        margin: 10px 15px 0 15px;
-      }
-      
       .mobile-news-item .news-link {
-        padding: 10px 15px 15px 15px;
+        padding: 12px 15px;
       }
       
       .mobile-news-item h3 {
         font-size: 0.95em;
         line-height: 1.4;
-      }
-      
-      .mobile-news-item .description {
-        display: none;
       }
     }
     
@@ -351,7 +343,7 @@
 좋은 하루 되십시오.
 매일 실시간으로 전해지는 양산의 소식들을 빠르게 전해드립니다.
 한번에 주요매체들의 소식을 확인하시고 우리 일상의 이야기들을 통해
-양산발전의 밑거름을 함께 만들어 갔으면 좋겠습니다.</div></div><div class="info-section briefing-section"><div class="info-label">브리핑</div><div class="info-content">원동면 고점교 다리가 붕괴우려가 있다고 합니다.
+양산발전의 밑거름을 함께 만들어 갔으면 좋겠습니다.</div></div><div class="info-section briefing-section"><div class="info-label">오늘의 뉴스 브리핑</div><div class="info-content">원동면 고점교 다리가 붕괴우려가 있다고 합니다.
 증산지구 개발계획이 발표되었습니다. 매체마다 평가가 다르네요.
 화제리 일대의 축사 악취로 주민 민원이 심하다고 합니다.</div></div>
         </div>
@@ -371,2817 +363,2465 @@
     <div class="mobile-news-container">
       
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119673" target="_blank" class="news-link">
-              <h3>청년과 세대를 잇는 화합의 장…청년축제 '청년 온(ON)' 성료</h3>
+              <h3>청년과 세대를 잇는 화합의 장…청년축제 '청년 온(ON)' 성료 - 양산신문</h3>
               <p class="date">2025-10-01 07:45</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15874" target="_blank" class="news-link">
-              <h3>원동면 고점교 다리부위 유실 '붕괴우려' 주민불안</h3>
+              <h3>원동면 고점교 다리부위 유실 '붕괴우려' 주민불안 - 양산뉴스파크</h3>
               <p class="date">2025-09-30 10:12</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43802" target="_blank" class="news-link">
-              <h3>동원과기대, 전문대학혁신지원사업 연계  “2025 청년축제 체험 부스 운영” 재학생 전공 재능기부로 지역사회 상생 실천</h3>
+              <h3>동원과기대, 전문대학혁신지원사업 연계  “2025 청년축제 체험 부스 운영” 재학생 전공 재능기부로 지역사회 상생 실천 - 웅상뉴스</h3>
               <p class="date">2025-10-01 08:24</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=2013" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/경남도의회)정규헌 경남도의회 운영위원장,“저소득 보훈대상자 예우를 위한 국민기초생활보장제도 개선 촉구”</h3>
+              <h3>(부울경메가시티뉴스/경남도의회)정규헌 경남도의회 운영위원장,“저소득 보훈대상자 예우를 위한 국민기초생활보장제도 개선 촉구” - 양산TV</h3>
               <p class="date">2025-09-30 16:10</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119666" target="_blank" class="news-link">
-              <h3>"양산 역사 기록하는 양산신문, 현재·미래 위한 사명 계속돼야"</h3>
+              <h3>"양산 역사 기록하는 양산신문, 현재·미래 위한 사명 계속돼야" - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15873" target="_blank" class="news-link">
-              <h3>"역시 이장호 전 의원", 흔들림 없는 나눔봉사 눈길</h3>
+              <h3>"역시 이장호 전 의원", 흔들림 없는 나눔봉사 눈길 - 양산뉴스파크</h3>
               <p class="date">2025-09-30 01:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=317&idx=43801" target="_blank" class="news-link">
-              <h3>웅상종합사회복지관,  아동과 부모가 함께 즐긴 건강한 여가의 장  ‘가족 명랑운동회’ 개최</h3>
+              <h3>웅상종합사회복지관,  아동과 부모가 함께 즐긴 건강한 여가의 장  ‘가족 명랑운동회’ 개최 - 웅상뉴스</h3>
               <p class="date">2025-10-01 08:21</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=3&no=2012" target="_blank" class="news-link">
-              <h3>(속보)양산시의원2, 양산시청공무원3, 울산지검에 고발!</h3>
+              <h3>(속보)양산시의원2, 양산시청공무원3, 울산지검에 고발! - 양산TV</h3>
               <p class="date">2025-09-30 13:29</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119655" target="_blank" class="news-link">
-              <h3>배달양산, 2만원 이상 주문하면 5천원 즉시 할인</h3>
+              <h3>배달양산, 2만원 이상 주문하면 5천원 즉시 할인 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15871" target="_blank" class="news-link">
-              <h3>부산경남 숲해설가 28·29기 '한마음 체육행사' 개최</h3>
+              <h3>부산경남 숲해설가 28·29기 '한마음 체육행사' 개최 - 양산뉴스파크</h3>
               <p class="date">2025-09-29 20:54</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43800" target="_blank" class="news-link">
-              <h3>기아 부산사업소 명동점 기아오토큐 허석규 대표, 양산YMCA 청소년 동아리 육성 위해 720만원 후원</h3>
+              <h3>기아 부산사업소 명동점 기아오토큐 허석규 대표, 양산YMCA 청소년 동아리 육성 위해 720만원 후원 - 웅상뉴스</h3>
               <p class="date">2025-10-01 08:15</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=2011" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)양주동 바르게살기, 추석맞이 나눔활동 펼쳐</h3>
+              <h3>(양산시 보도뉴스)양주동 바르게살기, 추석맞이 나눔활동 펼쳐 - 양산TV</h3>
               <p class="date">2025-09-29 19:41</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119654" target="_blank" class="news-link">
-              <h3>양산시, 추석연휴 653개 의료기관·428개 약국 운영</h3>
+              <h3>양산시, 추석연휴 653개 의료기관·428개 약국 운영 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15870" target="_blank" class="news-link">
-              <h3>양산한전, 김태호 의원실과 요양원 '합동 봉사활동'</h3>
+              <h3>양산한전, 김태호 의원실과 요양원 '합동 봉사활동' - 양산뉴스파크</h3>
               <p class="date">2025-09-29 18:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=260&idx=43799" target="_blank" class="news-link">
-              <h3>상록수봉사단, 웅상노인복지관에 추석맞이 무료특식 후원</h3>
+              <h3>상록수봉사단, 웅상노인복지관에 추석맞이 무료특식 후원 - 웅상뉴스</h3>
               <p class="date">2025-10-01 08:04</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=86&category=98&no=2010" target="_blank" class="news-link">
-              <h3>뻥이야 뻥! 나시장의 뻥?</h3>
+              <h3>뻥이야 뻥! 나시장의 뻥? - 양산TV</h3>
               <p class="date">2025-09-29 18:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119653" target="_blank" class="news-link">
-              <h3>물금 음식점 화재, 의용소방대 초기 진화로 피해 최소화</h3>
+              <h3>물금 음식점 화재, 의용소방대 초기 진화로 피해 최소화 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15869" target="_blank" class="news-link">
-              <h3>양산노인일자리센터, 178명 대상 '구직자 만남의 날'</h3>
+              <h3>양산노인일자리센터, 178명 대상 '구직자 만남의 날' - 양산뉴스파크</h3>
               <p class="date">2025-09-29 18:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43798" target="_blank" class="news-link">
-              <h3>동원과기대 스포츠재활학부 창업동아리 ‘밸런스 앤 무브’, 『온(On)동네 생활민원 행정서비스의 날』 참여</h3>
+              <h3>동원과기대 스포츠재활학부 창업동아리 ‘밸런스 앤 무브’, 『온(On)동네 생활민원 행정서비스의 날』 참여 - 웅상뉴스</h3>
               <p class="date">2025-09-29 18:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=91&category=92&no=2009" target="_blank" class="news-link">
-              <h3>양산의 동정(動靜)/존경받는 기업인 서영옥 회장, 한국수필 수필가 등단</h3>
+              <h3>양산의 동정(動靜)/존경받는 기업인 서영옥 회장, 한국수필 수필가 등단 - 양산TV</h3>
               <p class="date">2025-09-28 16:15</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119652" target="_blank" class="news-link">
-              <h3>양산시정 '교통인프라 사업' 가장 잘했다</h3>
+              <h3>양산시정 '교통인프라 사업' 가장 잘했다 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15868" target="_blank" class="news-link">
-              <h3>농촌주민들 축산농가 악취와 오폐수 방류 '고통호소'</h3>
+              <h3>농촌주민들 축산농가 악취와 오폐수 방류 '고통호소' - 양산뉴스파크</h3>
               <p class="date">2025-09-29 09:30</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=285&idx=43797" target="_blank" class="news-link">
-              <h3>양산교육지원청, 학교회계 현장에서 답을 찾다!!</h3>
+              <h3>양산교육지원청, 학교회계 현장에서 답을 찾다!! - 웅상뉴스</h3>
               <p class="date">2025-09-29 08:51</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=3&no=2008" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)양산시, 국가정보시스템 장애 긴급 대응체계 가동</h3>
+              <h3>(양산시 보도뉴스)양산시, 국가정보시스템 장애 긴급 대응체계 가동 - 양산TV</h3>
               <p class="date">2025-09-27 18:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119651" target="_blank" class="news-link">
-              <h3>양산 수돗물 녹조 검출 놓고 환경단체·양산시 입장차</h3>
+              <h3>양산 수돗물 녹조 검출 놓고 환경단체·양산시 입장차 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15867" target="_blank" class="news-link">
-              <h3>[해헌의 독서파크(482)] '한 걸음씩 걸어서 거기 도착하려네'-<나희덕></h3>
+              <h3>[해헌의 독서파크(482)] '한 걸음씩 걸어서 거기 도착하려네'-<나희덕> - 양산뉴스파크</h3>
               <p class="date">2025-09-29 00:42</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43796" target="_blank" class="news-link">
-              <h3>시나브로복지관, 『부모와 함께하는 언어 발달 부모교육』 성료</h3>
+              <h3>시나브로복지관, 『부모와 함께하는 언어 발달 부모교육』 성료 - 웅상뉴스</h3>
               <p class="date">2025-09-29 08:45</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=2007" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)삼성동 바르게살기운동위원회, 추석맞이 나눔 실천</h3>
+              <h3>(양산시 보도뉴스)삼성동 바르게살기운동위원회, 추석맞이 나눔 실천 - 양산TV</h3>
               <p class="date">2025-09-26 20:00</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119650" target="_blank" class="news-link">
-              <h3>삼수 끝에 우선협상대상자 선정. 증산 미니신도시 '청신호'</h3>
+              <h3>삼수 끝에 우선협상대상자 선정. 증산 미니신도시 '청신호' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15866" target="_blank" class="news-link">
-              <h3>조국혁신당 양산위원장, 심경숙 전 시의회 부의장</h3>
+              <h3>조국혁신당 양산위원장, 심경숙 전 시의회 부의장 - 양산뉴스파크</h3>
               <p class="date">2025-09-28 23:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=317&idx=43795" target="_blank" class="news-link">
-              <h3>웅상종합사회복지관, 아동건강권 증진을 위한 학교폭력예방캠페인 및 신체활동프로그램 실시</h3>
+              <h3>웅상종합사회복지관, 아동건강권 증진을 위한 학교폭력예방캠페인 및 신체활동프로그램 실시 - 웅상뉴스</h3>
               <p class="date">2025-09-29 08:41</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=2006" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/양산YMCA)기아오토큐 허석규 대표,양산YMCA 청소년 동아리 육성 위해 720만원 후원</h3>
+              <h3>(부울경메가시티뉴스/양산YMCA)기아오토큐 허석규 대표,양산YMCA 청소년 동아리 육성 위해 720만원 후원 - 양산TV</h3>
               <p class="date">2025-09-26 19:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119649" target="_blank" class="news-link">
-              <h3>양산부산대병원, 경실련 평가 우수한 성과 기록</h3>
+              <h3>양산부산대병원, 경실련 평가 우수한 성과 기록 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15865" target="_blank" class="news-link">
-              <h3>박인 부의장, 국회 초청 '지역문제 법령개정' 촉구</h3>
+              <h3>박인 부의장, 국회 초청 '지역문제 법령개정' 촉구 - 양산뉴스파크</h3>
               <p class="date">2025-09-28 17:45</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=318&idx=43794" target="_blank" class="news-link">
-              <h3>웅상노인복지관, 6·25 참전유공자 대상,추석 명절 선물 전달식 진행</h3>
+              <h3>웅상노인복지관, 6·25 참전유공자 대상,추석 명절 선물 전달식 진행 - 웅상뉴스</h3>
               <p class="date">2025-09-29 08:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=2005" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/경남도의회)박인 부의장, 추석 명절 사회복지시설 위문</h3>
+              <h3>(부울경메가시티뉴스/경남도의회)박인 부의장, 추석 명절 사회복지시설 위문 - 양산TV</h3>
               <p class="date">2025-09-26 13:14</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119648" target="_blank" class="news-link">
-              <h3>안전보건공단, 양산 복지시설 방문 '안전 사각지대 해소'</h3>
+              <h3>안전보건공단, 양산 복지시설 방문 '안전 사각지대 해소' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15864" target="_blank" class="news-link">
-              <h3>세상을 바꾸는 시간V', 양산 리샤오나 '최우수 수상'</h3>
+              <h3>세상을 바꾸는 시간V', 양산 리샤오나 '최우수 수상' - 양산뉴스파크</h3>
               <p class="date">2025-09-28 10:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=333&idx=43793" target="_blank" class="news-link">
-              <h3>제11회 평산동 한마당 잔치, 10월 19일 열린다</h3>
+              <h3>제11회 평산동 한마당 잔치, 10월 19일 열린다 - 웅상뉴스</h3>
               <p class="date">2025-09-26 18:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=91&category=93&no=2004" target="_blank" class="news-link">
-              <h3>(칼럼)추석 연휴, 빈집은 도둑의 표적이 됩니다</h3>
+              <h3>(칼럼)추석 연휴, 빈집은 도둑의 표적이 됩니다 - 양산TV</h3>
               <p class="date">2025-09-25 18:57</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119647" target="_blank" class="news-link">
-              <h3>양산시시설관리공단 숲애서, 생태복원 '山타숲 행사'</h3>
+              <h3>양산시시설관리공단 숲애서, 생태복원 '山타숲 행사' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15863" target="_blank" class="news-link">
-              <h3>이재영 위원장, 양산발전·경남 현안해결 '관심요청'</h3>
+              <h3>이재영 위원장, 양산발전·경남 현안해결 '관심요청' - 양산뉴스파크</h3>
               <p class="date">2025-09-27 09:04</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=268&idx=43792" target="_blank" class="news-link">
-              <h3>이경희 양산미술협회 회장 “아이들의 순수성, 그리고 양산의 예술을 말하다”</h3>
+              <h3>이경희 양산미술협회 회장 “아이들의 순수성, 그리고 양산의 예술을 말하다” - 웅상뉴스</h3>
               <p class="date">2025-09-26 10:17</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=3&no=2003" target="_blank" class="news-link">
-              <h3>(양산시의회 보도뉴스)양산시의회, 추석 맞아 사회복지시설 위문 방문</h3>
+              <h3>(양산시의회 보도뉴스)양산시의회, 추석 맞아 사회복지시설 위문 방문 - 양산TV</h3>
               <p class="date">2025-09-25 14:57</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119646" target="_blank" class="news-link">
-              <h3>양산시, 추석맞이 온누리상품권 환급행사</h3>
+              <h3>양산시, 추석맞이 온누리상품권 환급행사 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15862" target="_blank" class="news-link">
-              <h3>금강산업개발, 추석 '소외계층돕기' 200만원 기탁</h3>
+              <h3>금강산업개발, 추석 '소외계층돕기' 200만원 기탁 - 양산뉴스파크</h3>
               <p class="date">2025-09-26 13:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=268&idx=43791" target="_blank" class="news-link">
-              <h3>김영희 양산문인협회 회장 “생활에서 길어 올린 글, 40년의 문학”</h3>
+              <h3>김영희 양산문인협회 회장 “생활에서 길어 올린 글, 40년의 문학” - 웅상뉴스</h3>
               <p class="date">2025-09-26 10:17</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=2002" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)「십시일반(十匙一飯) 가게」 59호점 현판 전달</h3>
+              <h3>(양산시 보도뉴스)「십시일반(十匙一飯) 가게」 59호점 현판 전달 - 양산TV</h3>
               <p class="date">2025-09-24 19:57</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119645" target="_blank" class="news-link">
-              <h3>양산시, 환경부 '노후상수관망 정비사업' 선정</h3>
+              <h3>양산시, 환경부 '노후상수관망 정비사업' 선정 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15861" target="_blank" class="news-link">
-              <h3>공유신 의원 '청년 취업 톡톡(Talk·Talk) 콘서트' 참가</h3>
+              <h3>공유신 의원 '청년 취업 톡톡(Talk·Talk) 콘서트' 참가 - 양산뉴스파크</h3>
               <p class="date">2025-09-26 11:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=332&idx=43789" target="_blank" class="news-link">
-              <h3>[성지순례 안내] 제15차 중국 구화산·황산 4일 단독 성지순례</h3>
+              <h3>[성지순례 안내] 제15차 중국 구화산·황산 4일 단독 성지순례 - 웅상뉴스</h3>
               <p class="date">2025-09-25 10:35</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=2001" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/경남도의회)박인 부의장, 국회서 지역현안 해결 위해 법령 개정 촉구</h3>
+              <h3>(부울경메가시티뉴스/경남도의회)박인 부의장, 국회서 지역현안 해결 위해 법령 개정 촉구 - 양산TV</h3>
               <p class="date">2025-09-24 17:06</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119644" target="_blank" class="news-link">
-              <h3>추석연휴에도 빈틈없이 양산시민 안전 최우선</h3>
+              <h3>추석연휴에도 빈틈없이 양산시민 안전 최우선 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15860" target="_blank" class="news-link">
-              <h3>짐스코렘어학원, '김태오·이윤우·박시완' 대회 입상</h3>
+              <h3>짐스코렘어학원, '김태오·이윤우·박시완' 대회 입상 - 양산뉴스파크</h3>
               <p class="date">2025-09-25 17:59</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=262&idx=43788" target="_blank" class="news-link">
-              <h3>[여행人 탐방] “크루즈는 희로애락이다” – 양산 서창 첫 크루즈 Ranway 지사 연 임아란 지사장</h3>
+              <h3>[여행人 탐방] “크루즈는 희로애락이다” – 양산 서창 첫 크루즈 Ranway 지사 연 임아란 지사장 - 웅상뉴스</h3>
               <p class="date">2025-09-24 16:49</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=2000" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)책으로 하나 되는 양산, 제10회 독서골든벨 참가자 모집</h3>
+              <h3>(양산시 보도뉴스)책으로 하나 되는 양산, 제10회 독서골든벨 참가자 모집 - 양산TV</h3>
               <p class="date">2025-09-23 20:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119643" target="_blank" class="news-link">
-              <h3>양산시, 추석맞이 도로시설물 대대적 환경정비</h3>
+              <h3>양산시, 추석맞이 도로시설물 대대적 환경정비 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15859" target="_blank" class="news-link">
-              <h3>양산시 식수원, 원동 상수원보호구역 '불안한 관리'</h3>
+              <h3>양산시 식수원, 원동 상수원보호구역 '불안한 관리' - 양산뉴스파크</h3>
               <p class="date">2025-09-25 13:52</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43787" target="_blank" class="news-link">
-              <h3>94세 고령의 어르신, 재능 기부 “빛난다”</h3>
+              <h3>94세 고령의 어르신, 재능 기부 “빛난다” - 웅상뉴스</h3>
               <p class="date">2025-09-24 14:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=1999" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/양산상공회의소)‘조윤범 바이올리니스트 초청’ CEO세미나 개최</h3>
+              <h3>(부울경메가시티뉴스/양산상공회의소)‘조윤범 바이올리니스트 초청’ CEO세미나 개최 - 양산TV</h3>
               <p class="date">2025-09-23 17:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119642" target="_blank" class="news-link">
-              <h3>동면 금산마을 세월교 침수 우려…자동차단시설 설치</h3>
+              <h3>동면 금산마을 세월교 침수 우려…자동차단시설 설치 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15858" target="_blank" class="news-link">
-              <h3>곽종포 의장, 스마트물류·진료지원센터 '기공식' 참석</h3>
+              <h3>곽종포 의장, 스마트물류·진료지원센터 '기공식' 참석 - 양산뉴스파크</h3>
               <p class="date">2025-09-25 11:22</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=270&idx=43786" target="_blank" class="news-link">
-              <h3>2024년 노인일자리 및 사회활동 지원사업 평가대회  7년 연속 수상</h3>
+              <h3>2024년 노인일자리 및 사회활동 지원사업 평가대회  7년 연속 수상 - 웅상뉴스</h3>
               <p class="date">2025-09-24 14:34</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=1998" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/경남도의회)최학범 의장, 카자흐 알마티서 산업·문화·인적 교류 기반 다져</h3>
+              <h3>(부울경메가시티뉴스/경남도의회)최학범 의장, 카자흐 알마티서 산업·문화·인적 교류 기반 다져 - 양산TV</h3>
               <p class="date">2025-09-23 09:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119641" target="_blank" class="news-link">
-              <h3>명동 경로당, 노후환경 개선사업 추진</h3>
+              <h3>명동 경로당, 노후환경 개선사업 추진 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15857" target="_blank" class="news-link">
-              <h3>[해헌의 독서파크(481)] '고통을 이해하는 새로운 프레임'-<강경희></h3>
+              <h3>[해헌의 독서파크(481)] '고통을 이해하는 새로운 프레임'-<강경희> - 양산뉴스파크</h3>
               <p class="date">2025-09-25 06:14</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=272&idx=43785" target="_blank" class="news-link">
-              <h3>동원과기대, 스포츠재활학부 창업동아리 ‘밸런스 앤 무브’</h3>
+              <h3>동원과기대, 스포츠재활학부 창업동아리 ‘밸런스 앤 무브’ - 웅상뉴스</h3>
               <p class="date">2025-09-24 07:06</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=86&category=98&no=1997" target="_blank" class="news-link">
-              <h3>내 세금으로 호화 바캉스!  양산시의회는?</h3>
+              <h3>내 세금으로 호화 바캉스!  양산시의회는? - 양산TV</h3>
               <p class="date">2025-09-22 15:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119640" target="_blank" class="news-link">
-              <h3>회야강, 역사와 문화가 흐르는 ‘빛의 강’으로 재탄생</h3>
+              <h3>회야강, 역사와 문화가 흐르는 ‘빛의 강’으로 재탄생 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15856" target="_blank" class="news-link">
-              <h3>[파크기고] '추석, 함께 살아가야 하는 탈북민 이웃들'</h3>
+              <h3>[파크기고] '추석, 함께 살아가야 하는 탈북민 이웃들' - 양산뉴스파크</h3>
               <p class="date">2025-09-24 13:42</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=260&idx=43783" target="_blank" class="news-link">
-              <h3>물건너 가는 덕계상설시장 천장 교체</h3>
+              <h3>물건너 가는 덕계상설시장 천장 교체 - 웅상뉴스</h3>
               <p class="date">2025-09-23 18:17</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=7&no=1996" target="_blank" class="news-link">
-              <h3>양산의 동정(動靜)/2025 양산삽량문화축전 개최</h3>
+              <h3>양산의 동정(動靜)/2025 양산삽량문화축전 개최 - 양산TV</h3>
               <p class="date">2025-09-21 16:52</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119639" target="_blank" class="news-link">
-              <h3>웅상출장소, 드론으로 환경오염배출업소 감시 강화</h3>
+              <h3>웅상출장소, 드론으로 환경오염배출업소 감시 강화 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15855" target="_blank" class="news-link">
-              <h3>양산상의, 조윤범 바이올리니스트 초청 'CEO세미나'</h3>
+              <h3>양산상의, 조윤범 바이올리니스트 초청 'CEO세미나' - 양산뉴스파크</h3>
               <p class="date">2025-09-24 00:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=260&idx=43784" target="_blank" class="news-link">
-              <h3>웅상선 광역철도,  지상철을 지하철로 변경하자는 여론</h3>
+              <h3>웅상선 광역철도,  지상철을 지하철로 변경하자는 여론 - 웅상뉴스</h3>
               <p class="date">2025-09-23 18:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=86&category=90&no=1995" target="_blank" class="news-link">
-              <h3>양산시 원동면 언곡마을(원동209호)의 진실_3편</h3>
+              <h3>양산시 원동면 언곡마을(원동209호)의 진실_3편 - 양산TV</h3>
               <p class="date">2025-09-19 18:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119638" target="_blank" class="news-link">
-              <h3>국민연금공단, 추석 맞아 기초연금 집중 홍보</h3>
+              <h3>국민연금공단, 추석 맞아 기초연금 집중 홍보 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15854" target="_blank" class="news-link">
-              <h3>양산시가족센터-양산마스터요리학원 '업무협약식'</h3>
+              <h3>양산시가족센터-양산마스터요리학원 '업무협약식' - 양산뉴스파크</h3>
               <p class="date">2025-09-23 12:59</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43782" target="_blank" class="news-link">
-              <h3>뒤틀린 한국의료, 웅상 비극...˝민간병원 넘어설 공공병원 필요˝</h3>
+              <h3>뒤틀린 한국의료, 웅상 비극...˝민간병원 넘어설 공공병원 필요˝ - 웅상뉴스</h3>
               <p class="date">2025-09-23 10:09</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=1994" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)양산시, 22일부터 인플루엔자(독감) 예방접종 실시</h3>
+              <h3>(양산시 보도뉴스)양산시, 22일부터 인플루엔자(독감) 예방접종 실시 - 양산TV</h3>
               <p class="date">2025-09-18 20:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119637" target="_blank" class="news-link">
-              <h3>양산시시설관리공단, 추석연휴 공영노외주차장 무료 개방</h3>
+              <h3>양산시시설관리공단, 추석연휴 공영노외주차장 무료 개방 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15853" target="_blank" class="news-link">
-              <h3>양산노인일자리센터, 시니어인턴십 7년 연속 '우수'</h3>
+              <h3>양산노인일자리센터, 시니어인턴십 7년 연속 '우수' - 양산뉴스파크</h3>
               <p class="date">2025-09-23 12:57</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=259&idx=43781" target="_blank" class="news-link">
-              <h3>이용식 의원, “전통시장·상점가 운영 안정성 확보를 위한 제도적 장치 마련”</h3>
+              <h3>이용식 의원, “전통시장·상점가 운영 안정성 확보를 위한 제도적 장치 마련” - 웅상뉴스</h3>
               <p class="date">2025-09-23 10:00</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=1993" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/영산대학교)K-푸드조리전공, 다문화가족 자녀와 요리체험</h3>
+              <h3>(부울경메가시티뉴스/영산대학교)K-푸드조리전공, 다문화가족 자녀와 요리체험 - 양산TV</h3>
               <p class="date">2025-09-18 09:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119636" target="_blank" class="news-link">
-              <h3>[포토]양주유치원 "풍성한 한가위 되세요!"</h3>
+              <h3>[포토]양주유치원 "풍성한 한가위 되세요!" - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15852" target="_blank" class="news-link">
-              <h3>아직도 끝나지 않은 우려, '웅상 의료공백은 진행 중'</h3>
+              <h3>아직도 끝나지 않은 우려, '웅상 의료공백은 진행 중' - 양산뉴스파크</h3>
               <p class="date">2025-09-23 12:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=304&idx=43780" target="_blank" class="news-link">
-              <h3>양산시, 추석 연휴로 지방세 신고납부 기한 연장</h3>
+              <h3>양산시, 추석 연휴로 지방세 신고납부 기한 연장 - 웅상뉴스</h3>
               <p class="date">2025-09-20 17:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=1992" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)홍룡사, 상북면에 이웃돕기 성금·쌀 전달</h3>
+              <h3>(양산시 보도뉴스)홍룡사, 상북면에 이웃돕기 성금·쌀 전달 - 양산TV</h3>
               <p class="date">2025-09-17 20:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119634" target="_blank" class="news-link">
-              <h3>영산대 미용예술학과, SFX 세계챔피언 기술 전수 받아</h3>
+              <h3>영산대 미용예술학과, SFX 세계챔피언 기술 전수 받아 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15851" target="_blank" class="news-link">
-              <h3>승마인들의 축제 '제1회 양산시장배 전국 승마대회'</h3>
+              <h3>승마인들의 축제 '제1회 양산시장배 전국 승마대회' - 양산뉴스파크</h3>
               <p class="date">2025-09-22 14:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43779" target="_blank" class="news-link">
-              <h3>국민생아구찜 평산점, 추석맞이 무료급식 봉사활동</h3>
+              <h3>국민생아구찜 평산점, 추석맞이 무료급식 봉사활동 - 웅상뉴스</h3>
               <p class="date">2025-09-20 17:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=8&no=1991" target="_blank" class="news-link">
-              <h3>(양산시의회 보도뉴스)곽종포 양산시의회 의장, 제11기 여성리더대학 강의</h3>
+              <h3>(양산시의회 보도뉴스)곽종포 양산시의회 의장, 제11기 여성리더대학 강의 - 양산TV</h3>
               <p class="date">2025-09-17 13:42</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119628" target="_blank" class="news-link">
-              <h3>양산교육지원청, 학생 맞춤형 학습공간 마련 '훈훈'</h3>
+              <h3>양산교육지원청, 학생 맞춤형 학습공간 마련 '훈훈' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15850" target="_blank" class="news-link">
-              <h3>멸종위기 천연기념물 '하늘다람쥐' 양산에서 발견</h3>
+              <h3>멸종위기 천연기념물 '하늘다람쥐' 양산에서 발견 - 양산뉴스파크</h3>
               <p class="date">2025-09-22 10:14</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=260&idx=43778" target="_blank" class="news-link">
-              <h3>평산동 적십자봉사회, 삼계탕 무료나눔 봉사</h3>
+              <h3>평산동 적십자봉사회, 삼계탕 무료나눔 봉사 - 웅상뉴스</h3>
               <p class="date">2025-09-20 16:59</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=1990" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/경남도의회)'최학범의장, 제50주년 민방위창설 기념행사 축사'</h3>
+              <h3>(부울경메가시티뉴스/경남도의회)'최학범의장, 제50주년 민방위창설 기념행사 축사' - 양산TV</h3>
               <p class="date">2025-09-17 08:58</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119627" target="_blank" class="news-link">
-              <h3>양산진로교육지원센터, 대학 면접 '꿀팁' 방출</h3>
+              <h3>양산진로교육지원센터, 대학 면접 '꿀팁' 방출 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15849" target="_blank" class="news-link">
-              <h3>제19회 양산전국하프마라톤대회' 12월 6일 개최</h3>
+              <h3>제19회 양산전국하프마라톤대회' 12월 6일 개최 - 양산뉴스파크</h3>
               <p class="date">2025-09-22 08:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=272&idx=43777" target="_blank" class="news-link">
-              <h3>제19회 양산전국하프마라톤 12월 6일 열린다</h3>
+              <h3>제19회 양산전국하프마라톤 12월 6일 열린다 - 웅상뉴스</h3>
               <p class="date">2025-09-20 16:00</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=86&category=90&no=1989" target="_blank" class="news-link">
-              <h3>하늘도 열 받았다 KBS전국노래자랑 양산시편</h3>
+              <h3>하늘도 열 받았다 KBS전국노래자랑 양산시편 - 양산TV</h3>
               <p class="date">2025-09-16 19:51</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119625" target="_blank" class="news-link">
-              <h3>원동중, 이웃사촌 원동초 찾아갑니다</h3>
+              <h3>원동중, 이웃사촌 원동초 찾아갑니다 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15848" target="_blank" class="news-link">
-              <h3>[해헌의 독서파크(480)] '이 도시에 불안하지 않은 사람은 없다'-<한기연></h3>
+              <h3>[해헌의 독서파크(480)] '이 도시에 불안하지 않은 사람은 없다'-<한기연> - 양산뉴스파크</h3>
               <p class="date">2025-09-22 01:41</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43776" target="_blank" class="news-link">
-              <h3>2025 웅상공공의료원 설립을 위한 저자와의 북토크 연다</h3>
+              <h3>2025 웅상공공의료원 설립을 위한 저자와의 북토크 연다 - 웅상뉴스</h3>
               <p class="date">2025-09-19 14:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=1&category=5&no=1988" target="_blank" class="news-link">
-              <h3>(양산시 보도뉴스)「십시일반(十匙一飯) 가게」58호점 현판 전달</h3>
+              <h3>(양산시 보도뉴스)「십시일반(十匙一飯) 가게」58호점 현판 전달 - 양산TV</h3>
               <p class="date">2025-09-15 19:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119624" target="_blank" class="news-link">
-              <h3>양산교육지원청, "기후위기, 교육현장에서 실천하자"</h3>
+              <h3>양산교육지원청, "기후위기, 교육현장에서 실천하자" - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15847" target="_blank" class="news-link">
-              <h3>이재영 위원장, 한국-러시아 학술회의 '공식초청'</h3>
+              <h3>이재영 위원장, 한국-러시아 학술회의 '공식초청' - 양산뉴스파크</h3>
               <p class="date">2025-09-21 20:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=267&idx=43774" target="_blank" class="news-link">
-              <h3>[탐방 | 향기와 인문학을 잇다] 양산 순수아로마 허선진 대표, 삶을 바꾸는 작은 향기</h3>
+              <h3>[탐방 | 향기와 인문학을 잇다] 양산 순수아로마 허선진 대표, 삶을 바꾸는 작은 향기 - 웅상뉴스</h3>
               <p class="date">2025-09-18 16:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산TV">
-            <span class="media-badge">양산TV</span>
             <a href="http://www.oratory.co.kr/news/view.html?section=115&category=118&no=1987" target="_blank" class="news-link">
-              <h3>(부울경메가시티뉴스/양산경찰서)“어르신 서다·보다·걷다를 실천해 주세요”</h3>
+              <h3>(부울경메가시티뉴스/양산경찰서)“어르신 서다·보다·걷다를 실천해 주세요” - 양산TV</h3>
               <p class="date">2025-09-15 10:26</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119623" target="_blank" class="news-link">
-              <h3>한국지역난방공사 양산지사, 사송초에 장학금 기부</h3>
+              <h3>한국지역난방공사 양산지사, 사송초에 장학금 기부 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15846" target="_blank" class="news-link">
-              <h3>능걸산 국가습지, 등산객 침범 보호종들 '고사위기'</h3>
+              <h3>능걸산 국가습지, 등산객 침범 보호종들 '고사위기' - 양산뉴스파크</h3>
               <p class="date">2025-09-21 10:44</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=310&idx=43773" target="_blank" class="news-link">
-              <h3>[기고]“노년의 행복은 축복이다.”</h3>
+              <h3>[기고]“노년의 행복은 축복이다.” - 웅상뉴스</h3>
               <p class="date">2025-09-18 14:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119622" target="_blank" class="news-link">
-              <h3>"감동과 웃음 선사"…상북도서관, 독서의 달 '인기'</h3>
+              <h3>"감동과 웃음 선사"…상북도서관, 독서의 달 '인기' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15844" target="_blank" class="news-link">
-              <h3>양산자유총연맹, '2025 자유안보수호 결의대회' 참석</h3>
+              <h3>양산자유총연맹, '2025 자유안보수호 결의대회' 참석 - 양산뉴스파크</h3>
               <p class="date">2025-09-19 12:37</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=278&idx=43772" target="_blank" class="news-link">
-              <h3>[사람과 이야기] “교통질서에서 복지·문화까지…20년 봉사의 길, 손준혁 회장”</h3>
+              <h3>[사람과 이야기] “교통질서에서 복지·문화까지…20년 봉사의 길, 손준혁 회장” - 웅상뉴스</h3>
               <p class="date">2025-09-18 13:52</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119621" target="_blank" class="news-link">
-              <h3>영어도서관 "캔 유 스피크 잉글리쉬?"</h3>
+              <h3>영어도서관 "캔 유 스피크 잉글리쉬?" - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15843" target="_blank" class="news-link">
-              <h3>이용식 의원, 낙동강 녹조확산 '식수안전' 대책 촉구</h3>
+              <h3>이용식 의원, 낙동강 녹조확산 '식수안전' 대책 촉구 - 양산뉴스파크</h3>
               <p class="date">2025-09-19 12:00</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=336&idx=43775" target="_blank" class="news-link">
-              <h3>[6人 6色] 화원의 하루</h3>
+              <h3>[6人 6色] 화원의 하루 - 웅상뉴스</h3>
               <p class="date">2025-09-18 06:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119620" target="_blank" class="news-link">
-              <h3>양산경찰서, 오늘부터 박형필 작가 전시 '기대'</h3>
+              <h3>양산경찰서, 오늘부터 박형필 작가 전시 '기대' - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15842" target="_blank" class="news-link">
-              <h3>최영호 도의원, 경남 거주 고려인 지원조례안 '통과'</h3>
+              <h3>최영호 도의원, 경남 거주 고려인 지원조례안 '통과' - 양산뉴스파크</h3>
               <p class="date">2025-09-19 10:17</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=306&idx=43770" target="_blank" class="news-link">
-              <h3>농협 양산시지부,‘농심천심(農心天心) 운동’결의 다져</h3>
+              <h3>농협 양산시지부,‘농심천심(農心天心) 운동’결의 다져 - 웅상뉴스</h3>
               <p class="date">2025-09-17 11:22</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119291" target="_blank" class="news-link">
-              <h3>[그림으로찾아가는양산]뚜두카페</h3>
+              <h3>[그림으로찾아가는양산]뚜두카페 - 양산신문</h3>
               <p class="date">2025-10-01 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15840" target="_blank" class="news-link">
-              <h3>동원과기대·물금고 야구선수 3명 '프로구단으로'</h3>
+              <h3>동원과기대·물금고 야구선수 3명 '프로구단으로' - 양산뉴스파크</h3>
               <p class="date">2025-09-19 09:48</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=278&idx=43771" target="_blank" class="news-link">
-              <h3>[한국식으로 일하고 미국식으로 승부하라] ①</h3>
+              <h3>[한국식으로 일하고 미국식으로 승부하라] ① - 웅상뉴스</h3>
               <p class="date">2025-09-17 10:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119672" target="_blank" class="news-link">
-              <h3>대한적십자 양산시협의회 '사랑의 밥차' 나눔 실천</h3>
+              <h3>대한적십자 양산시협의회 '사랑의 밥차' 나눔 실천 - 양산신문</h3>
               <p class="date">2025-10-01 07:35</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15839" target="_blank" class="news-link">
-              <h3>이용식 도의원, 야생동물 피해보상제 '인명도 포함'</h3>
+              <h3>이용식 도의원, 야생동물 피해보상제 '인명도 포함' - 양산뉴스파크</h3>
               <p class="date">2025-09-18 01:54</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=259&idx=43769" target="_blank" class="news-link">
-              <h3>곽종포 양산시의회 의장, 제11기 여성리더대학 강의</h3>
+              <h3>곽종포 양산시의회 의장, 제11기 여성리더대학 강의 - 웅상뉴스</h3>
               <p class="date">2025-09-17 10:41</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119674" target="_blank" class="news-link">
-              <h3>동면, 한가위 정 나누는 추석맞이 '찾아봄데이'</h3>
+              <h3>동면, 한가위 정 나누는 추석맞이 '찾아봄데이' - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15838" target="_blank" class="news-link">
-              <h3>[해헌의 독서파크(479)] '동전 하나로도 행복했던 구멍가게의 날들'-<이미경></h3>
+              <h3>[해헌의 독서파크(479)] '동전 하나로도 행복했던 구멍가게의 날들'-<이미경> - 양산뉴스파크</h3>
               <p class="date">2025-09-18 01:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43768" target="_blank" class="news-link">
-              <h3>[대학] 영산대 태권도학과, 전국대회 개인·단체 메달 휩쓸어</h3>
+              <h3>[대학] 영산대 태권도학과, 전국대회 개인·단체 메달 휩쓸어 - 웅상뉴스</h3>
               <p class="date">2025-09-17 09:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119671" target="_blank" class="news-link">
-              <h3>상하북종합사회복지관, 추석맞이 '온(溫)마을 한가위'</h3>
+              <h3>상하북종합사회복지관, 추석맞이 '온(溫)마을 한가위' - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15836" target="_blank" class="news-link">
-              <h3>곽종포 시의회 의장, '의회기능과 역할' 특강 가져</h3>
+              <h3>곽종포 시의회 의장, '의회기능과 역할' 특강 가져 - 양산뉴스파크</h3>
               <p class="date">2025-09-17 19:44</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43767" target="_blank" class="news-link">
-              <h3>[대학] “파크골프 실습 연계등 지역 밀착형 교육모델 주목“</h3>
+              <h3>[대학] “파크골프 실습 연계등 지역 밀착형 교육모델 주목“ - 웅상뉴스</h3>
               <p class="date">2025-09-17 09:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119670" target="_blank" class="news-link">
-              <h3>사송 주님의 교회, 동면에 라면 50박스 기탁</h3>
+              <h3>사송 주님의 교회, 동면에 라면 50박스 기탁 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15835" target="_blank" class="news-link">
-              <h3>겨울철 독감 인플루엔자 22일부터 '무료예방접종'</h3>
+              <h3>겨울철 독감 인플루엔자 22일부터 '무료예방접종' - 양산뉴스파크</h3>
               <p class="date">2025-09-17 08:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=336&idx=43766" target="_blank" class="news-link">
-              <h3>[캘리] 우리네 삶이 따뜻한 계절에 무사히 닿기를</h3>
+              <h3>[캘리] 우리네 삶이 따뜻한 계절에 무사히 닿기를 - 웅상뉴스</h3>
               <p class="date">2025-09-17 09:05</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119669" target="_blank" class="news-link">
-              <h3>강서동 새마을협의회·부녀회 사랑의 쌀 기탁</h3>
+              <h3>강서동 새마을협의회·부녀회 사랑의 쌀 기탁 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15833" target="_blank" class="news-link">
-              <h3>농협 양산시지부, '농심천심(農心天心) 운동' 결의</h3>
+              <h3>농협 양산시지부, '농심천심(農心天心) 운동' 결의 - 양산뉴스파크</h3>
               <p class="date">2025-09-16 19:39</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=336&idx=43765" target="_blank" class="news-link">
-              <h3>[디카시]하심 -제1회 경북문경연가 디카시 공모전 가작</h3>
+              <h3>[디카시]하심 -제1회 경북문경연가 디카시 공모전 가작 - 웅상뉴스</h3>
               <p class="date">2025-09-17 09:02</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119668" target="_blank" class="news-link">
-              <h3>양산시, 제18회 치매극복의 날 기념 행사</h3>
+              <h3>양산시, 제18회 치매극복의 날 기념 행사 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15832" target="_blank" class="news-link">
-              <h3>양산 방문의해'라며···왜? 명소를 '야적장으로 사용'</h3>
+              <h3>양산 방문의해'라며···왜? 명소를 '야적장으로 사용' - 양산뉴스파크</h3>
               <p class="date">2025-09-16 11:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=313&idx=43764" target="_blank" class="news-link">
-              <h3>[윤현주의 고전과 세태] 니코스 카잔차키스 `그리스인 조르바` -일체의 형이상학과 우상에서 벗어난 한 야생 인간의 분투기</h3>
+              <h3>[윤현주의 고전과 세태] 니코스 카잔차키스 `그리스인 조르바` -일체의 형이상학과 우상에서 벗어난 한 야생 인간의 분투기 - 웅상뉴스</h3>
               <p class="date">2025-09-17 08:31</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119667" target="_blank" class="news-link">
-              <h3>동면 새마을지도자협의회·부녀회, 추석맞이 쌀 나눔</h3>
+              <h3>동면 새마을지도자협의회·부녀회, 추석맞이 쌀 나눔 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15831" target="_blank" class="news-link">
-              <h3>동면 경부고속도로 '화물트레일러 전복' 운전자 숨져</h3>
+              <h3>동면 경부고속도로 '화물트레일러 전복' 운전자 숨져 - 양산뉴스파크</h3>
               <p class="date">2025-09-16 11:03</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=270&idx=43763" target="_blank" class="news-link">
-              <h3>양산시, 자살예방사업 우수기관 보건복지부장관 표창 수상</h3>
+              <h3>양산시, 자살예방사업 우수기관 보건복지부장관 표창 수상 - 웅상뉴스</h3>
               <p class="date">2025-09-16 15:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119665" target="_blank" class="news-link">
-              <h3>이장호 전 시의원, 추석맞이 이웃사랑 기부활동</h3>
+              <h3>이장호 전 시의원, 추석맞이 이웃사랑 기부활동 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15829" target="_blank" class="news-link">
-              <h3>강영주 양산바르게살기 회장 '국민훈장 동백장'</h3>
+              <h3>강영주 양산바르게살기 회장 '국민훈장 동백장' - 양산뉴스파크</h3>
               <p class="date">2025-09-15 17:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=270&idx=43762" target="_blank" class="news-link">
-              <h3>양산시정신건강복지센터-CJ 제일제당 양산, 업무협약 체결</h3>
+              <h3>양산시정신건강복지센터-CJ 제일제당 양산, 업무협약 체결 - 웅상뉴스</h3>
               <p class="date">2025-09-16 12:38</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119664" target="_blank" class="news-link">
-              <h3>웅상노인복지관, 우양재단 잔반 없는날 캠페인</h3>
+              <h3>웅상노인복지관, 우양재단 잔반 없는날 캠페인 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15828" target="_blank" class="news-link">
-              <h3>경남도 기념물 '양산 우불산성' 발굴조사 2차례 진행</h3>
+              <h3>경남도 기념물 '양산 우불산성' 발굴조사 2차례 진행 - 양산뉴스파크</h3>
               <p class="date">2025-09-15 12:31</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=337&idx=43761" target="_blank" class="news-link">
-              <h3>남승흥 작가의 디카시 한 스푼(11)</h3>
+              <h3>남승흥 작가의 디카시 한 스푼(11) - 웅상뉴스</h3>
               <p class="date">2025-09-16 07:15</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119663" target="_blank" class="news-link">
-              <h3>이희선 전 축구협회 회장 유가족, 시에 200만원 기부</h3>
+              <h3>이희선 전 축구협회 회장 유가족, 시에 200만원 기부 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15827" target="_blank" class="news-link">
-              <h3>어린이보호 횡단보도 '적색잔여시간표시기' 설치</h3>
+              <h3>어린이보호 횡단보도 '적색잔여시간표시기' 설치 - 양산뉴스파크</h3>
               <p class="date">2025-09-15 11:12</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43760" target="_blank" class="news-link">
-              <h3>웅상의 최대 문화유산 ‘우불산성’ 발굴조사한다</h3>
+              <h3>웅상의 최대 문화유산 ‘우불산성’ 발굴조사한다 - 웅상뉴스</h3>
               <p class="date">2025-09-15 12:32</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119662" target="_blank" class="news-link">
-              <h3>국제라이온스협회 웅상라이온스클럽, 웅상노인복지관 쌀 후원</h3>
+              <h3>국제라이온스협회 웅상라이온스클럽, 웅상노인복지관 쌀 후원 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15826" target="_blank" class="news-link">
-              <h3>[해헌의 독서파크(478)] '프랑스 시(詩)와 낭만주의'-<이건우></h3>
+              <h3>[해헌의 독서파크(478)] '프랑스 시(詩)와 낭만주의'-<이건우> - 양산뉴스파크</h3>
               <p class="date">2025-09-15 00:35</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=313&idx=43759" target="_blank" class="news-link">
-              <h3>“창민스님의 100세 장수 비결”</h3>
+              <h3>“창민스님의 100세 장수 비결” - 웅상뉴스</h3>
               <p class="date">2025-09-14 11:54</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119661" target="_blank" class="news-link">
-              <h3>트로트 가수 양지원, 고향 양산에 따뜻한 나눔</h3>
+              <h3>트로트 가수 양지원, 고향 양산에 따뜻한 나눔 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15825" target="_blank" class="news-link">
-              <h3>양산 원동주민들에게 깨끗하고 안정적인 '물 공급'</h3>
+              <h3>양산 원동주민들에게 깨끗하고 안정적인 '물 공급' - 양산뉴스파크</h3>
               <p class="date">2025-09-14 20:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=276&idx=43757" target="_blank" class="news-link">
-              <h3>[부동산급매물] 명문시티부동산, 급매물 전문 중개로 눈길</h3>
+              <h3>[부동산급매물] 명문시티부동산, 급매물 전문 중개로 눈길 - 웅상뉴스</h3>
               <p class="date">2025-09-12 17:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119660" target="_blank" class="news-link">
-              <h3>양산시종합사회복지관, 국민연금수급자 아카데미 수료식</h3>
+              <h3>양산시종합사회복지관, 국민연금수급자 아카데미 수료식 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15823" target="_blank" class="news-link">
-              <h3>[속보]제3회 양산 강변전국가요제 '내달 10일 연기'</h3>
+              <h3>[속보]제3회 양산 강변전국가요제 '내달 10일 연기' - 양산뉴스파크</h3>
               <p class="date">2025-09-13 17:23</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=333&idx=43758" target="_blank" class="news-link">
-              <h3>[문화] 양산시민과 함께하는 국악 한마당 21일 개최</h3>
+              <h3>[문화] 양산시민과 함께하는 국악 한마당 21일 개최 - 웅상뉴스</h3>
               <p class="date">2025-09-12 10:33</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119659" target="_blank" class="news-link">
-              <h3>양산시종합사회복지관, 부모·양육관계자 대상 부모교육</h3>
+              <h3>양산시종합사회복지관, 부모·양육관계자 대상 부모교육 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15822" target="_blank" class="news-link">
-              <h3>양산에 '새 문화예술공간' 탄생···'모두아트센터 개관'</h3>
+              <h3>양산에 '새 문화예술공간' 탄생···'모두아트센터 개관' - 양산뉴스파크</h3>
               <p class="date">2025-09-13 04:48</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43756" target="_blank" class="news-link">
-              <h3>박경진 변호사, 한국AI인테리어공간협회 해외협력 공식 이사 위촉</h3>
+              <h3>박경진 변호사, 한국AI인테리어공간협회 해외협력 공식 이사 위촉 - 웅상뉴스</h3>
               <p class="date">2025-09-11 17:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119658" target="_blank" class="news-link">
-              <h3>이성훈 노래강사, 노인의 날 맞아 보리건빵 400개 후원</h3>
+              <h3>이성훈 노래강사, 노인의 날 맞아 보리건빵 400개 후원 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15820" target="_blank" class="news-link">
-              <h3>온라이프건설, 양산 토정산단 조성 '삐걱' 난항 우려</h3>
+              <h3>온라이프건설, 양산 토정산단 조성 '삐걱' 난항 우려 - 양산뉴스파크</h3>
               <p class="date">2025-09-12 10:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=333&idx=43755" target="_blank" class="news-link">
-              <h3>원효 사상, 화쟁의 길을 열다…양산문화원 2025 학술대회 18일 개최</h3>
+              <h3>원효 사상, 화쟁의 길을 열다…양산문화원 2025 학술대회 18일 개최 - 웅상뉴스</h3>
               <p class="date">2025-09-11 16:49</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119657" target="_blank" class="news-link">
-              <h3>산수보전협회, 환경캠페인·급식봉사·추석맞이 선물 전달</h3>
+              <h3>산수보전협회, 환경캠페인·급식봉사·추석맞이 선물 전달 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15819" target="_blank" class="news-link">
-              <h3>멀쩡한 원두막이 단숨에 '폭삭', 도대체 무슨 일이...</h3>
+              <h3>멀쩡한 원두막이 단숨에 '폭삭', 도대체 무슨 일이... - 양산뉴스파크</h3>
               <p class="date">2025-09-12 09:26</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43754" target="_blank" class="news-link">
-              <h3>“어르신들의 발걸음이 지역을 지킵니다”</h3>
+              <h3>“어르신들의 발걸음이 지역을 지킵니다” - 웅상뉴스</h3>
               <p class="date">2025-09-11 15:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119656" target="_blank" class="news-link">
-              <h3>웅상종합사회복지관, 아동건강권 증진 학교폭력 예방캠페인</h3>
+              <h3>웅상종합사회복지관, 아동건강권 증진 학교폭력 예방캠페인 - 양산신문</h3>
               <p class="date">2025-10-01 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15818" target="_blank" class="news-link">
-              <h3>전국 최초 편의점 연계 자살예방사업 '장관 표창'</h3>
+              <h3>전국 최초 편의점 연계 자살예방사업 '장관 표창' - 양산뉴스파크</h3>
               <p class="date">2025-09-11 23:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43753" target="_blank" class="news-link">
-              <h3>영산대, 부산 시니어 아카데미 3기 입학식 개최</h3>
+              <h3>영산대, 부산 시니어 아카데미 3기 입학식 개최 - 웅상뉴스</h3>
               <p class="date">2025-09-11 10:14</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119633" target="_blank" class="news-link">
-              <h3>경남도, 추석연휴 대비 응급의료 협력 강화</h3>
+              <h3>경남도, 추석연휴 대비 응급의료 협력 강화 - 양산신문</h3>
               <p class="date">2025-10-01 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=15817" target="_blank" class="news-link">
-              <h3>양산시의회, 제주도서 '하반기 국내 의정연수' 실시</h3>
+              <h3>양산시의회, 제주도서 '하반기 국내 의정연수' 실시 - 양산뉴스파크</h3>
               <p class="date">2025-09-11 23:29</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=285&idx=43752" target="_blank" class="news-link">
-              <h3>양산교육지원청과 양산시청, 교육 현안 소통과 협력 강화</h3>
+              <h3>양산교육지원청과 양산시청, 교육 현안 소통과 협력 강화 - 웅상뉴스</h3>
               <p class="date">2025-09-11 10:08</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119632" target="_blank" class="news-link">
-              <h3>경남도, 추석 연휴 감염병 확산 방지 총력 대응</h3>
+              <h3>경남도, 추석 연휴 감염병 확산 방지 총력 대응 - 양산신문</h3>
               <p class="date">2025-10-01 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3495" target="_blank" class="news-link">
-              <h3>제3회 고교생 정책 제안대회 아이디어 '톡톡'</h3>
+              <h3>제3회 고교생 정책 제안대회 아이디어 '톡톡' - 양산뉴스파크</h3>
               <p class="date">2016-11-12 15:03</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43751" target="_blank" class="news-link">
-              <h3>4개 대학, ‘미래차 분야 지역 정주형 창의인재 양성’ 업무협약 체결’</h3>
+              <h3>4개 대학, ‘미래차 분야 지역 정주형 창의인재 양성’ 업무협약 체결’ - 웅상뉴스</h3>
               <p class="date">2025-09-11 09:44</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119631" target="_blank" class="news-link">
-              <h3>경남도, 정부 시스템 화재 일선 민원현장 긴급 점검</h3>
+              <h3>경남도, 정부 시스템 화재 일선 민원현장 긴급 점검 - 양산신문</h3>
               <p class="date">2025-10-01 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3493" target="_blank" class="news-link">
-              <h3>김성훈 대변인 양산여중서 전문직업인 초청 '특강'</h3>
+              <h3>김성훈 대변인 양산여중서 전문직업인 초청 '특강' - 양산뉴스파크</h3>
               <p class="date">2016-11-12 14:39</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43750" target="_blank" class="news-link">
-              <h3>양산교육지원청, “학생 선수 인권, 청렴으로 함께”</h3>
+              <h3>양산교육지원청, “학생 선수 인권, 청렴으로 함께” - 웅상뉴스</h3>
               <p class="date">2025-09-11 09:15</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119630" target="_blank" class="news-link">
-              <h3>"추석 연휴, 안전 최우선" 경남소방본부,특별경계근무 돌입</h3>
+              <h3>"추석 연휴, 안전 최우선" 경남소방본부,특별경계근무 돌입 - 양산신문</h3>
               <p class="date">2025-10-01 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3489" target="_blank" class="news-link">
-              <h3>김성훈 위원장, 신라대서 청년 리더쉽·일자리 '특강'</h3>
+              <h3>김성훈 위원장, 신라대서 청년 리더쉽·일자리 '특강' - 양산뉴스파크</h3>
               <p class="date">2016-11-11 08:35</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=284&idx=43749" target="_blank" class="news-link">
-              <h3>2025 양산삽량문화축전 오는 26일 개막</h3>
+              <h3>2025 양산삽량문화축전 오는 26일 개막 - 웅상뉴스</h3>
               <p class="date">2025-09-10 11:08</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119629" target="_blank" class="news-link">
-              <h3>경남·전남, 남해안 상생 손잡다 "남해안을 대한민국 미래 성장축으로"</h3>
+              <h3>경남·전남, 남해안 상생 손잡다 "남해안을 대한민국 미래 성장축으로" - 양산신문</h3>
               <p class="date">2025-10-01 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3488" target="_blank" class="news-link">
-              <h3>가을나들이와 쇼핑, 하북 문화의 길 '프리마켓' 전개</h3>
+              <h3>가을나들이와 쇼핑, 하북 문화의 길 '프리마켓' 전개 - 양산뉴스파크</h3>
               <p class="date">2016-11-11 08:30</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=284&idx=43748" target="_blank" class="news-link">
-              <h3>양산시, 2025년 9월 정기분 재산세 627억원 부과</h3>
+              <h3>양산시, 2025년 9월 정기분 재산세 627억원 부과 - 웅상뉴스</h3>
               <p class="date">2025-09-09 19:01</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119618" target="_blank" class="news-link">
-              <h3>울산항만공사、 울산항 국내 최초 드라이벌크선에 그린메탄올 급유 성공</h3>
+              <h3>울산항만공사、 울산항 국내 최초 드라이벌크선에 그린메탄올 급유 성공 - 양산신문</h3>
               <p class="date">2025-09-29 17:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3480" target="_blank" class="news-link">
-              <h3>박종훈 경남교육감, 학부모와 함께 양산교육 '논의'</h3>
+              <h3>박종훈 경남교육감, 학부모와 함께 양산교육 '논의' - 양산뉴스파크</h3>
               <p class="date">2016-11-09 07:54</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=284&idx=43747" target="_blank" class="news-link">
-              <h3>양산시, 시민이 체감하는 민선 8기 공약사업 순항</h3>
+              <h3>양산시, 시민이 체감하는 민선 8기 공약사업 순항 - 웅상뉴스</h3>
               <p class="date">2025-09-09 18:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119617" target="_blank" class="news-link">
-              <h3>울산항만공사、 울산항 건설현장 하도급 및 임금체불 불시점검</h3>
+              <h3>울산항만공사、 울산항 건설현장 하도급 및 임금체불 불시점검 - 양산신문</h3>
               <p class="date">2025-09-29 17:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3474" target="_blank" class="news-link">
-              <h3>제1회 양산 어르신 게이트볼대회' 성황리 개최</h3>
+              <h3>제1회 양산 어르신 게이트볼대회' 성황리 개최 - 양산뉴스파크</h3>
               <p class="date">2016-11-08 15:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=264&idx=43746" target="_blank" class="news-link">
-              <h3>[지역역사기획] 강진 전라병영성, 군사와 상업의 교차로</h3>
+              <h3>[지역역사기획] 강진 전라병영성, 군사와 상업의 교차로 - 웅상뉴스</h3>
               <p class="date">2025-09-09 17:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119598" target="_blank" class="news-link">
-              <h3>양산시정, 시민 10명 중 6명 긍정 평가</h3>
+              <h3>양산시정, 시민 10명 중 6명 긍정 평가 - 양산신문</h3>
               <p class="date">2025-09-29 07:50</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3473" target="_blank" class="news-link">
-              <h3>양산시의회 제147회 임시회 4일간 일정 '돌입'</h3>
+              <h3>양산시의회 제147회 임시회 4일간 일정 '돌입' - 양산뉴스파크</h3>
               <p class="date">2016-11-08 14:00</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=270&idx=43745" target="_blank" class="news-link">
-              <h3>양산노인일자리창출지원센터, 취업기초적응교육 교육 실시</h3>
+              <h3>양산노인일자리창출지원센터, 취업기초적응교육 교육 실시 - 웅상뉴스</h3>
               <p class="date">2025-09-09 16:39</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119595" target="_blank" class="news-link">
-              <h3>양산도 '전월세 역전'…임대 계약 10건 중 6건 월세</h3>
+              <h3>양산도 '전월세 역전'…임대 계약 10건 중 6건 월세 - 양산신문</h3>
               <p class="date">2025-09-29 07:49</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3469" target="_blank" class="news-link">
-              <h3>심경숙 의원, 특성화고 설립은 '양산교육의 미래'</h3>
+              <h3>심경숙 의원, 특성화고 설립은 '양산교육의 미래' - 양산뉴스파크</h3>
               <p class="date">2016-11-08 11:58</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=264&idx=43744" target="_blank" class="news-link">
-              <h3>[문화기행] 강진·보길도에서 배우는 인문학의 깊이</h3>
+              <h3>[문화기행] 강진·보길도에서 배우는 인문학의 깊이 - 웅상뉴스</h3>
               <p class="date">2025-09-09 16:02</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119614" target="_blank" class="news-link">
-              <h3>"올해 삽량문화축전, 볼거리 충족! 먹거리 만족! 놀거리 흡족!"</h3>
+              <h3>"올해 삽량문화축전, 볼거리 충족! 먹거리 만족! 놀거리 흡족!" - 양산신문</h3>
               <p class="date">2025-09-29 07:48</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3470" target="_blank" class="news-link">
-              <h3>양산 프리마켓 수익금 130만원, 복지사각지대 '전달'</h3>
+              <h3>양산 프리마켓 수익금 130만원, 복지사각지대 '전달' - 양산뉴스파크</h3>
               <p class="date">2016-11-08 08:51</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=264&idx=43743" target="_blank" class="news-link">
-              <h3>[지역역사기획] “해와 달, 바다를 건너다</h3>
+              <h3>[지역역사기획] “해와 달, 바다를 건너다 - 웅상뉴스</h3>
               <p class="date">2025-09-08 13:31</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119597" target="_blank" class="news-link">
-              <h3>국가정보시스템 장애, ‘양산’도 긴급 대응체계 가동</h3>
+              <h3>국가정보시스템 장애, ‘양산’도 긴급 대응체계 가동 - 양산신문</h3>
               <p class="date">2025-09-29 07:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3468" target="_blank" class="news-link">
-              <h3>갤러리 양산, 김태헌 작가와의 만남 '토크쇼'</h3>
+              <h3>갤러리 양산, 김태헌 작가와의 만남 '토크쇼' - 양산뉴스파크</h3>
               <p class="date">2016-11-08 08:39</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=264&idx=43741" target="_blank" class="news-link">
-              <h3>[기억의 현장] 포항 장기, 조선 유배문화의 산실</h3>
+              <h3>[기억의 현장] 포항 장기, 조선 유배문화의 산실 - 웅상뉴스</h3>
               <p class="date">2025-09-08 12:08</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119582" target="_blank" class="news-link">
-              <h3>"양산생활예술 공모전에 도전하세요"</h3>
+              <h3>"양산생활예술 공모전에 도전하세요" - 양산신문</h3>
               <p class="date">2025-09-29 07:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3467" target="_blank" class="news-link">
-              <h3>양산시의회 새누리당 의원간 의장단 갈등 '봉합'</h3>
+              <h3>양산시의회 새누리당 의원간 의장단 갈등 '봉합' - 양산뉴스파크</h3>
               <p class="date">2016-11-07 16:50</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=264&idx=43742" target="_blank" class="news-link">
-              <h3>[기억의 현장] 장사상륙작전, 학도병이 지킨 200고지</h3>
+              <h3>[기억의 현장] 장사상륙작전, 학도병이 지킨 200고지 - 웅상뉴스</h3>
               <p class="date">2025-09-08 11:58</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119569" target="_blank" class="news-link">
-              <h3>양산 자기소: 가산리 분청사기 가마' 특별전</h3>
+              <h3>양산 자기소: 가산리 분청사기 가마' 특별전 - 양산신문</h3>
               <p class="date">2025-09-29 07:45</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3438" target="_blank" class="news-link">
-              <h3>[포토]태풍 차바 피해 주민돕기 성금전달 잇따라</h3>
+              <h3>[포토]태풍 차바 피해 주민돕기 성금전달 잇따라 - 양산뉴스파크</h3>
               <p class="date">2016-11-02 09:46</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43738" target="_blank" class="news-link">
-              <h3>[대학] 동원과기대, ˝신중년 스펙-업 플랫폼 사업 용접기능사 과정˝ 수료식 및 신중년 지역 소통의 장 성료</h3>
+              <h3>[대학] 동원과기대, ˝신중년 스펙-업 플랫폼 사업 용접기능사 과정˝ 수료식 및 신중년 지역 소통의 장 성료 - 웅상뉴스</h3>
               <p class="date">2025-09-08 06:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119561" target="_blank" class="news-link">
-              <h3>물금고 지붕 뚫을 상승세…내년 성적도 ‘기대’</h3>
+              <h3>물금고 지붕 뚫을 상승세…내년 성적도 ‘기대’ - 양산신문</h3>
               <p class="date">2025-09-29 07:44</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3437" target="_blank" class="news-link">
-              <h3>양산시,  올해 제2회 추경예산안 9,752억원 편성</h3>
+              <h3>양산시,  올해 제2회 추경예산안 9,752억원 편성 - 양산뉴스파크</h3>
               <p class="date">2016-11-02 09:42</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43739" target="_blank" class="news-link">
-              <h3>[대학] 영산대 노찬용 이사장 ‘제27회 부산여성상’ 수상</h3>
+              <h3>[대학] 영산대 노찬용 이사장 ‘제27회 부산여성상’ 수상 - 웅상뉴스</h3>
               <p class="date">2025-09-08 06:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119591" target="_blank" class="news-link">
-              <h3>이주민의 봉사 스토리, 경남을 감동시키다</h3>
+              <h3>이주민의 봉사 스토리, 경남을 감동시키다 - 양산신문</h3>
               <p class="date">2025-09-29 07:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3435" target="_blank" class="news-link">
-              <h3>서창동사무소, 회야천 일원 '환경정비활동' 전개</h3>
+              <h3>서창동사무소, 회야천 일원 '환경정비활동' 전개 - 양산뉴스파크</h3>
               <p class="date">2016-11-01 12:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=317&idx=43737" target="_blank" class="news-link">
-              <h3>웅상농업협동조합, 지역어르신 건강을 위한 “한방 삼계탕” 나눔</h3>
+              <h3>웅상농업협동조합, 지역어르신 건강을 위한 “한방 삼계탕” 나눔 - 웅상뉴스</h3>
               <p class="date">2025-09-08 06:32</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119581" target="_blank" class="news-link">
-              <h3>양산부산대병원 희귀질환센터, 근위축증 확진…조기 진단 성과</h3>
+              <h3>양산부산대병원 희귀질환센터, 근위축증 확진…조기 진단 성과 - 양산신문</h3>
               <p class="date">2025-09-29 07:42</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3434" target="_blank" class="news-link">
-              <h3>[속보]양산시, 한시기구 '조례·규칙개정안' 입법예고</h3>
+              <h3>[속보]양산시, 한시기구 '조례·규칙개정안' 입법예고 - 양산뉴스파크</h3>
               <p class="date">2016-11-01 10:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=306&idx=43736" target="_blank" class="news-link">
-              <h3>˝어르신 안전은 사전 준비부터”</h3>
+              <h3>˝어르신 안전은 사전 준비부터” - 웅상뉴스</h3>
               <p class="date">2025-09-04 10:26</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119613" target="_blank" class="news-link">
-              <h3>대한주택관리사 양산지부, '양산천변 환경정화' 활동</h3>
+              <h3>대한주택관리사 양산지부, '양산천변 환경정화' 활동 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3432" target="_blank" class="news-link">
-              <h3>양산교육청, 경남서 첫 '진로교육지원센터' 개관</h3>
+              <h3>양산교육청, 경남서 첫 '진로교육지원센터' 개관 - 양산뉴스파크</h3>
               <p class="date">2016-11-01 08:06</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=259&idx=43735" target="_blank" class="news-link">
-              <h3>˝웅상지역의 자치군, 반드시 전환되어야 한다˝</h3>
+              <h3>˝웅상지역의 자치군, 반드시 전환되어야 한다˝ - 웅상뉴스</h3>
               <p class="date">2025-09-04 08:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119612" target="_blank" class="news-link">
-              <h3>[시민기자]직접 보고 배우는 한국4H 양산시본부 경주문화탐방</h3>
+              <h3>[시민기자]직접 보고 배우는 한국4H 양산시본부 경주문화탐방 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3430" target="_blank" class="news-link">
-              <h3>메아리메시지 개발 '위커넥티드' 장애인 지원서비스</h3>
+              <h3>메아리메시지 개발 '위커넥티드' 장애인 지원서비스 - 양산뉴스파크</h3>
               <p class="date">2016-11-01 07:38</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=270&idx=43734" target="_blank" class="news-link">
-              <h3>“엄마는 네가 영어로 행복했으면 좋겠다”</h3>
+              <h3>“엄마는 네가 영어로 행복했으면 좋겠다” - 웅상뉴스</h3>
               <p class="date">2025-09-04 07:32</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119611" target="_blank" class="news-link">
-              <h3>양산YMCA, 기아오토큐 허석규 대표 720만원 후원</h3>
+              <h3>양산YMCA, 기아오토큐 허석규 대표 720만원 후원 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3429" target="_blank" class="news-link">
-              <h3>양산시 개발제한구역내 3개 마을 '주민지원사업'</h3>
+              <h3>양산시 개발제한구역내 3개 마을 '주민지원사업' - 양산뉴스파크</h3>
               <p class="date">2016-11-01 07:35</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=316&idx=43733" target="_blank" class="news-link">
-              <h3>소주동 착한이웃 나눔냉장고 운영 재개</h3>
+              <h3>소주동 착한이웃 나눔냉장고 운영 재개 - 웅상뉴스</h3>
               <p class="date">2025-09-04 07:25</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119610" target="_blank" class="news-link">
-              <h3>넥센타이어, 상하북종합사회복지관과 ESG 나눔 실천 협약 체결</h3>
+              <h3>넥센타이어, 상하북종합사회복지관과 ESG 나눔 실천 협약 체결 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3425" target="_blank" class="news-link">
-              <h3>고객과 소통하는 양산시설관리공단의 '감사행사'</h3>
+              <h3>고객과 소통하는 양산시설관리공단의 '감사행사' - 양산뉴스파크</h3>
               <p class="date">2016-10-31 16:19</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=336&idx=43731" target="_blank" class="news-link">
-              <h3>[캘리] 당신이 좋은 건</h3>
+              <h3>[캘리] 당신이 좋은 건 - 웅상뉴스</h3>
               <p class="date">2025-09-03 08:02</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119609" target="_blank" class="news-link">
-              <h3>동면지역사회보장협의체·적십자봉사회, 김치 나눔</h3>
+              <h3>동면지역사회보장협의체·적십자봉사회, 김치 나눔 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3421" target="_blank" class="news-link">
-              <h3>가을하늘 수놓는 '제2회 서각회원전' 화려한 개막</h3>
+              <h3>가을하늘 수놓는 '제2회 서각회원전' 화려한 개막 - 양산뉴스파크</h3>
               <p class="date">2016-10-31 07:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=286&idx=43730" target="_blank" class="news-link">
-              <h3>동원과기대·계명문화대학교·제주관광대학교, “2025 K-VET 거버넌스 출범”</h3>
+              <h3>동원과기대·계명문화대학교·제주관광대학교, “2025 K-VET 거버넌스 출범” - 웅상뉴스</h3>
               <p class="date">2025-09-03 07:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119608" target="_blank" class="news-link">
-              <h3>양주동 바르게살기, 추석맞이 나눔활동 펼쳐</h3>
+              <h3>양주동 바르게살기, 추석맞이 나눔활동 펼쳐 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3420" target="_blank" class="news-link">
-              <h3>동면 쓰레기 불법투기 감시단 활약효과 '톡톡'</h3>
+              <h3>동면 쓰레기 불법투기 감시단 활약효과 '톡톡' - 양산뉴스파크</h3>
               <p class="date">2016-10-31 07:38</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="웅상뉴스">
-            <span class="media-badge">웅상뉴스</span>
             <a href="http://www.ungsangnews.com/default/index_view_page.php?part_idx=315&idx=43732" target="_blank" class="news-link">
-              <h3>베트남 독립 80주년 기념행사, 양산서 성황리에 열려</h3>
+              <h3>베트남 독립 80주년 기념행사, 양산서 성황리에 열려 - 웅상뉴스</h3>
               <p class="date">2025-09-03 07:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119607" target="_blank" class="news-link">
-              <h3>중앙동새마을부녀회, 추석맞이 라면 기탁</h3>
+              <h3>중앙동새마을부녀회, 추석맞이 라면 기탁 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3419" target="_blank" class="news-link">
-              <h3>동원과기대, 산업인력공단과 'K-MOVE 스쿨' 발대식</h3>
+              <h3>동원과기대, 산업인력공단과 'K-MOVE 스쿨' 발대식 - 양산뉴스파크</h3>
               <p class="date">2016-10-31 07:34</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119606" target="_blank" class="news-link">
-              <h3>소주동 적십자봉사회, 추석맞이 후원물품 나눔</h3>
+              <h3>소주동 적십자봉사회, 추석맞이 후원물품 나눔 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3416" target="_blank" class="news-link">
-              <h3>양산시에 '양방항노화산업국' 한시기구 설치된다.</h3>
+              <h3>양산시에 '양방항노화산업국' 한시기구 설치된다. - 양산뉴스파크</h3>
               <p class="date">2016-10-30 12:13</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119605" target="_blank" class="news-link">
-              <h3>대한적십자봉사회 양산시협의회, 김치나눔</h3>
+              <h3>대한적십자봉사회 양산시협의회, 김치나눔 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3358" target="_blank" class="news-link">
-              <h3>합창대제전 개막, '박수갈채' 받은 양산시립합창단</h3>
+              <h3>합창대제전 개막, '박수갈채' 받은 양산시립합창단 - 양산뉴스파크</h3>
               <p class="date">2016-10-19 07:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119604" target="_blank" class="news-link">
-              <h3>소주동 바르게살기운동협의회, 추석맞이 후원물품 기탁</h3>
+              <h3>소주동 바르게살기운동협의회, 추석맞이 후원물품 기탁 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3356" target="_blank" class="news-link">
-              <h3>양산바르게살기, 신인균 초청 물금고서 '안보특강'</h3>
+              <h3>양산바르게살기, 신인균 초청 물금고서 '안보특강' - 양산뉴스파크</h3>
               <p class="date">2016-10-18 14:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119603" target="_blank" class="news-link">
-              <h3>웅상노인복지관, 6·25 참전유공자 추석 명절 선물 전달식</h3>
+              <h3>웅상노인복지관, 6·25 참전유공자 추석 명절 선물 전달식 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3355" target="_blank" class="news-link">
-              <h3>[기고]"경찰관 인력 증원에도 인력난은 여전해"</h3>
+              <h3>[기고]"경찰관 인력 증원에도 인력난은 여전해" - 양산뉴스파크</h3>
               <p class="date">2016-10-18 13:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119602" target="_blank" class="news-link">
-              <h3>웅상노인복지관, 노인일자리 참여자와 문화체험 나들이</h3>
+              <h3>웅상노인복지관, 노인일자리 참여자와 문화체험 나들이 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3354" target="_blank" class="news-link">
-              <h3>[기고]"아동학대 근절, 사회의 감시망이 절실한 시점"</h3>
+              <h3>[기고]"아동학대 근절, 사회의 감시망이 절실한 시점" - 양산뉴스파크</h3>
               <p class="date">2016-10-18 13:10</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119601" target="_blank" class="news-link">
-              <h3>㈜금강산업개발, 하북면에 추석맞이 성금 100만원 기탁</h3>
+              <h3>㈜금강산업개발, 하북면에 추석맞이 성금 100만원 기탁 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3353" target="_blank" class="news-link">
-              <h3>[의회소식]심경숙, 자원회수시설 감사 '점검수준'</h3>
+              <h3>[의회소식]심경숙, 자원회수시설 감사 '점검수준' - 양산뉴스파크</h3>
               <p class="date">2016-10-18 09:58</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119600" target="_blank" class="news-link">
-              <h3>양산시, 배내골 주민들과 함께 환경정화활동 전개</h3>
+              <h3>양산시, 배내골 주민들과 함께 환경정화활동 전개 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3352" target="_blank" class="news-link">
-              <h3>양산시설관리공단, 태풍피해돕기 성금 전달</h3>
+              <h3>양산시설관리공단, 태풍피해돕기 성금 전달 - 양산뉴스파크</h3>
               <p class="date">2016-10-18 09:48</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119599" target="_blank" class="news-link">
-              <h3>이비티에스협동조합 양산중앙지국, 추석 맞이 생필품 후원</h3>
+              <h3>이비티에스협동조합 양산중앙지국, 추석 맞이 생필품 후원 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3349" target="_blank" class="news-link">
-              <h3>석산초 비대위, "학교신설만이 최선의 교육권 확보"</h3>
+              <h3>석산초 비대위, "학교신설만이 최선의 교육권 확보" - 양산뉴스파크</h3>
               <p class="date">2016-10-17 13:49</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119596" target="_blank" class="news-link">
-              <h3>금산지역아동센터 아동들, 감동과 단합의 무대 선사</h3>
+              <h3>금산지역아동센터 아동들, 감동과 단합의 무대 선사 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3347" target="_blank" class="news-link">
-              <h3>양산축구협회, '경제효과 6억' 중국선수 훈련유치</h3>
+              <h3>양산축구협회, '경제효과 6억' 중국선수 훈련유치 - 양산뉴스파크</h3>
               <p class="date">2016-10-17 12:31</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119594" target="_blank" class="news-link">
-              <h3>"행복은 '결과'가 아니라 '마음먹는 순간' 시작된다</h3>
+              <h3>"행복은 '결과'가 아니라 '마음먹는 순간' 시작된다 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3341" target="_blank" class="news-link">
-              <h3>[속보]=경남 양산지역 '특별재난지역 선포' 확정</h3>
+              <h3>[속보]=경남 양산지역 '특별재난지역 선포' 확정 - 양산뉴스파크</h3>
               <p class="date">2016-10-16 18:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119593" target="_blank" class="news-link">
-              <h3>상하북노인대학, 건강체조 우수상 상금 기탁</h3>
+              <h3>상하북노인대학, 건강체조 우수상 상금 기탁 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3339" target="_blank" class="news-link">
-              <h3>시낭송가 양산 진미경 씨, 이육사 낭송대회서 '대상'</h3>
+              <h3>시낭송가 양산 진미경 씨, 이육사 낭송대회서 '대상' - 양산뉴스파크</h3>
               <p class="date">2016-10-16 16:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119592" target="_blank" class="news-link">
-              <h3>시나브로복지관, '부모와 함께하는 언어 발달 부모교육' 성료</h3>
+              <h3>시나브로복지관, '부모와 함께하는 언어 발달 부모교육' 성료 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3336" target="_blank" class="news-link">
-              <h3>운행 중인 버스기사 '폭행' 갑질승객들 입건</h3>
+              <h3>운행 중인 버스기사 '폭행' 갑질승객들 입건 - 양산뉴스파크</h3>
               <p class="date">2016-10-14 16:17</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119590" target="_blank" class="news-link">
-              <h3>국제라이온스협회 355-D(울산·양산)지구 3지역, 700만원 후원</h3>
+              <h3>국제라이온스협회 355-D(울산·양산)지구 3지역, 700만원 후원 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3335" target="_blank" class="news-link">
-              <h3>[특별기고]우리 '학교전담경찰'이 달라졌어요</h3>
+              <h3>[특별기고]우리 '학교전담경찰'이 달라졌어요 - 양산뉴스파크</h3>
               <p class="date">2016-10-14 15:56</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119589" target="_blank" class="news-link">
-              <h3>양산시, 추석 연휴기간 산불방지 특별대책 추진</h3>
+              <h3>양산시, 추석 연휴기간 산불방지 특별대책 추진 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3334" target="_blank" class="news-link">
-              <h3>태풍피해 함께 나누는 '사랑의 기탁·봉사' 줄이어</h3>
+              <h3>태풍피해 함께 나누는 '사랑의 기탁·봉사' 줄이어 - 양산뉴스파크</h3>
               <p class="date">2016-10-14 15:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119588" target="_blank" class="news-link">
-              <h3>국민건강보험공단 양산지사, 장기요양기관 우수종사자 표창</h3>
+              <h3>국민건강보험공단 양산지사, 장기요양기관 우수종사자 표창 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3331" target="_blank" class="news-link">
-              <h3>양산시설관리공단, 공공시설물 복구 이어 '대민지원'</h3>
+              <h3>양산시설관리공단, 공공시설물 복구 이어 '대민지원' - 양산뉴스파크</h3>
               <p class="date">2016-10-13 13:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119587" target="_blank" class="news-link">
-              <h3>웅상종합사회복지관, 양산시복지재단 10주년 기념 정책포럼</h3>
+              <h3>웅상종합사회복지관, 양산시복지재단 10주년 기념 정책포럼 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3330" target="_blank" class="news-link">
-              <h3>산악인 이상배 '히말라야 배낭여행' 길잡이 출간</h3>
+              <h3>산악인 이상배 '히말라야 배낭여행' 길잡이 출간 - 양산뉴스파크</h3>
               <p class="date">2016-10-13 11:27</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119586" target="_blank" class="news-link">
-              <h3>양산부산대병원 소화기내과 김수진 교수, 국제 학술상 수상</h3>
+              <h3>양산부산대병원 소화기내과 김수진 교수, 국제 학술상 수상 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3327" target="_blank" class="news-link">
-              <h3>양산시 여자배구단 전국체전 우승 '2연패 달성'</h3>
+              <h3>양산시 여자배구단 전국체전 우승 '2연패 달성' - 양산뉴스파크</h3>
               <p class="date">2016-10-13 07:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119584" target="_blank" class="news-link">
-              <h3>고용노동부 양산지청 지역 고용상황 점검회의</h3>
+              <h3>고용노동부 양산지청 지역 고용상황 점검회의 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3323" target="_blank" class="news-link">
-              <h3>㈜화승R&amp;A, 태풍피해민 돕기 '통큰 기부' 눈길</h3>
+              <h3>㈜화승R&amp;A, 태풍피해민 돕기 '통큰 기부' 눈길 - 양산뉴스파크</h3>
               <p class="date">2016-10-12 17:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119583" target="_blank" class="news-link">
-              <h3>[시민기자] 오!행복한 마을공동체, 자원순환 교육 통해 청바지 업사이클링 가방 제작</h3>
+              <h3>[시민기자] 오!행복한 마을공동체, 자원순환 교육 통해 청바지 업사이클링 가방 제작 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3322" target="_blank" class="news-link">
-              <h3>동원과학기술대, NCS 교육품질관리 교직원 연수</h3>
+              <h3>동원과학기술대, NCS 교육품질관리 교직원 연수 - 양산뉴스파크</h3>
               <p class="date">2016-10-12 12:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119580" target="_blank" class="news-link">
-              <h3>영산대, 청년 취업 톡톡 콘서트 '호응'</h3>
+              <h3>영산대, 청년 취업 톡톡 콘서트 '호응' - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3319" target="_blank" class="news-link">
-              <h3>태풍피해 중소기업·소상공인 '긴급경영자금' 지원</h3>
+              <h3>태풍피해 중소기업·소상공인 '긴급경영자금' 지원 - 양산뉴스파크</h3>
               <p class="date">2016-10-12 11:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119579" target="_blank" class="news-link">
-              <h3>동원과기대, 신산업 분야 실무형 인재 육성 앞장</h3>
+              <h3>동원과기대, 신산업 분야 실무형 인재 육성 앞장 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3318" target="_blank" class="news-link">
-              <h3>체코 '세베라첵 합창단' 동원과학기술대 방문</h3>
+              <h3>체코 '세베라첵 합창단' 동원과학기술대 방문 - 양산뉴스파크</h3>
               <p class="date">2016-10-11 17:21</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119574" target="_blank" class="news-link">
-              <h3>삼성초 "흡연은 나빠요! 금연은 좋아요!"</h3>
+              <h3>삼성초 "흡연은 나빠요! 금연은 좋아요!" - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3317" target="_blank" class="news-link">
-              <h3>양산 김유라 교수, 신석정 시낭송대회 '대상' 수상</h3>
+              <h3>양산 김유라 교수, 신석정 시낭송대회 '대상' 수상 - 양산뉴스파크</h3>
               <p class="date">2016-10-11 14:18</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119571" target="_blank" class="news-link">
-              <h3>양산교육지원청 "남부시장에서 추석 장보기 끝!"</h3>
+              <h3>양산교육지원청 "남부시장에서 추석 장보기 끝!" - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3315" target="_blank" class="news-link">
-              <h3>"양산! 이제는 특별재난지역 선포가 최우선"</h3>
+              <h3>"양산! 이제는 특별재난지역 선포가 최우선" - 양산뉴스파크</h3>
               <p class="date">2016-10-11 11:22</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119570" target="_blank" class="news-link">
-              <h3>양산시립도서관 "책을 읽어요. 마음을 이어요"</h3>
+              <h3>양산시립도서관 "책을 읽어요. 마음을 이어요" - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3314" target="_blank" class="news-link">
-              <h3>바르게살기·새마을회·양주체육회' 피해복구에 최선</h3>
+              <h3>바르게살기·새마을회·양주체육회' 피해복구에 최선 - 양산뉴스파크</h3>
               <p class="date">2016-10-11 10:43</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119568" target="_blank" class="news-link">
-              <h3>양산문화예술회관, '극단아시랑' 시민연극교실 "광인들의 축제"</h3>
+              <h3>양산문화예술회관, '극단아시랑' 시민연극교실 "광인들의 축제" - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3313" target="_blank" class="news-link">
-              <h3>동원과학기술대, 북부시장서 활성화 '바자회' 마련</h3>
+              <h3>동원과학기술대, 북부시장서 활성화 '바자회' 마련 - 양산뉴스파크</h3>
               <p class="date">2016-10-10 17:36</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119567" target="_blank" class="news-link">
-              <h3>[양산신문 갤러리]청담 '청년팔레트'전 -우주의 바다생물</h3>
+              <h3>[양산신문 갤러리]청담 '청년팔레트'전 -우주의 바다생물 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3312" target="_blank" class="news-link">
-              <h3>올림푸스짐, '제1회 청소년 문화체육 페스티벌'</h3>
+              <h3>올림푸스짐, '제1회 청소년 문화체육 페스티벌' - 양산뉴스파크</h3>
               <p class="date">2016-10-10 16:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119566" target="_blank" class="news-link">
-              <h3>양산교육지원청 "학교회계 현장에서 답을 찾자"</h3>
+              <h3>양산교육지원청 "학교회계 현장에서 답을 찾자" - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3308" target="_blank" class="news-link">
-              <h3>[국감]윤영석, 아베의 위안부 할머니 발언 '비난'</h3>
+              <h3>[국감]윤영석, 아베의 위안부 할머니 발언 '비난' - 양산뉴스파크</h3>
               <p class="date">2016-10-10 08:16</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119565" target="_blank" class="news-link">
-              <h3>양산교육지원청, 돌봄전담사의 마음을 들여다보다</h3>
+              <h3>양산교육지원청, 돌봄전담사의 마음을 들여다보다 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산뉴스파크">
-            <span class="media-badge">양산뉴스파크</span>
             <a href="http://www.ysnewspark.com/news/articleView.html?idxno=3307" target="_blank" class="news-link">
-              <h3>휴일도 없는 태풍피해 복구' 2천명 현장서 구슬땀</h3>
+              <h3>휴일도 없는 태풍피해 복구' 2천명 현장서 구슬땀 - 양산뉴스파크</h3>
               <p class="date">2016-10-10 08:11</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119564" target="_blank" class="news-link">
-              <h3>경남문화예술진흥원, 창원 NC파크서 ‘구석구석 찾아가는 문화공연’ 개최</h3>
+              <h3>경남문화예술진흥원, 창원 NC파크서 ‘구석구석 찾아가는 문화공연’ 개최 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119563" target="_blank" class="news-link">
-              <h3>제2회 삽량주 장애인 게이트볼대회 개최</h3>
+              <h3>제2회 삽량주 장애인 게이트볼대회 개최 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119562" target="_blank" class="news-link">
-              <h3>복식 준우승 '겹경사' 영산대, 대학 탁구 최강 '입증'</h3>
+              <h3>복식 준우승 '겹경사' 영산대, 대학 탁구 최강 '입증' - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119557" target="_blank" class="news-link">
-              <h3>[교육담론 시리즈] 교육과 인식 - 칸트편(중)</h3>
+              <h3>[교육담론 시리즈] 교육과 인식 - 칸트편(중) - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119556" target="_blank" class="news-link">
-              <h3>[맹자읽기] 락선불권(樂善不倦)</h3>
+              <h3>[맹자읽기] 락선불권(樂善不倦) - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119555" target="_blank" class="news-link">
-              <h3>[부동산 현장] 경업금지, 분식집도 해당될까</h3>
+              <h3>[부동산 현장] 경업금지, 분식집도 해당될까 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119554" target="_blank" class="news-link">
-              <h3>[초대시] 사랑이라는 착시</h3>
+              <h3>[초대시] 사랑이라는 착시 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119553" target="_blank" class="news-link">
-              <h3>[삶의 향기] 인류에 가장 무서운 병, 치매</h3>
+              <h3>[삶의 향기] 인류에 가장 무서운 병, 치매 - 양산신문</h3>
               <p class="date">2025-09-29 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119578" target="_blank" class="news-link">
-              <h3>"농어촌 기본소득 국비 상향해 달라"</h3>
+              <h3>"농어촌 기본소득 국비 상향해 달라" - 양산신문</h3>
               <p class="date">2025-09-29 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119577" target="_blank" class="news-link">
-              <h3>경남도, '농촌에서 살아보기 마을' 찾아가는 귀농귀촌 컨설팅</h3>
+              <h3>경남도, '농촌에서 살아보기 마을' 찾아가는 귀농귀촌 컨설팅 - 양산신문</h3>
               <p class="date">2025-09-29 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119576" target="_blank" class="news-link">
-              <h3>新실크로드 시대 첫걸음…"중앙아시아 교류 새 장 연다"</h3>
+              <h3>新실크로드 시대 첫걸음…"중앙아시아 교류 새 장 연다" - 양산신문</h3>
               <p class="date">2025-09-29 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119575" target="_blank" class="news-link">
-              <h3>"신중년 채용하고, 고용장려금 받아 가세요"</h3>
+              <h3>"신중년 채용하고, 고용장려금 받아 가세요" - 양산신문</h3>
               <p class="date">2025-09-29 07:20</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119573" target="_blank" class="news-link">
-              <h3>[갤러리휴] 한국서화협회 양산지회 첫 정기전 ‘이팝예술제’</h3>
+              <h3>[갤러리휴] 한국서화협회 양산지회 첫 정기전 ‘이팝예술제’ - 양산신문</h3>
               <p class="date">2025-09-26 16:44</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119559" target="_blank" class="news-link">
-              <h3>울산항만공사, 감사원 협업 '울산항 적극행정 지원 설명회' 개최</h3>
+              <h3>울산항만공사, 감사원 협업 '울산항 적극행정 지원 설명회' 개최 - 양산신문</h3>
               <p class="date">2025-09-26 11:10</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119522" target="_blank" class="news-link">
-              <h3>양산, 학교 옆 송전선로 가장 많은 도시 ‘불명예’</h3>
+              <h3>양산, 학교 옆 송전선로 가장 많은 도시 ‘불명예’ - 양산신문</h3>
               <p class="date">2025-09-26 07:55</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119523" target="_blank" class="news-link">
-              <h3>부울경 경제동맹 첫 걸음 ‘웅상선’에 힘 잔뜩 싣는다</h3>
+              <h3>부울경 경제동맹 첫 걸음 ‘웅상선’에 힘 잔뜩 싣는다 - 양산신문</h3>
               <p class="date">2025-09-26 07:54</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119531" target="_blank" class="news-link">
-              <h3>덕계상설시장, 오수 역류 발생…관리 사각지대가 만든 반복 불편</h3>
+              <h3>덕계상설시장, 오수 역류 발생…관리 사각지대가 만든 반복 불편 - 양산신문</h3>
               <p class="date">2025-09-26 07:53</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119515" target="_blank" class="news-link">
-              <h3>양산부산대병원, 국내 병원 최초 '스마트 물류센터' 만든다</h3>
+              <h3>양산부산대병원, 국내 병원 최초 '스마트 물류센터' 만든다 - 양산신문</h3>
               <p class="date">2025-09-26 07:51</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119517" target="_blank" class="news-link">
-              <h3>조국혁신당 심경숙, 양산시지역위원장 선출</h3>
+              <h3>조국혁신당 심경숙, 양산시지역위원장 선출 - 양산신문</h3>
               <p class="date">2025-09-26 07:50</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119520" target="_blank" class="news-link">
-              <h3>박인 부의장, 국회서 지역현안 해결 위해 법령 개정 촉구</h3>
+              <h3>박인 부의장, 국회서 지역현안 해결 위해 법령 개정 촉구 - 양산신문</h3>
               <p class="date">2025-09-26 07:49</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119518" target="_blank" class="news-link">
-              <h3>김태우 전 양산시의원, 3년 구형</h3>
+              <h3>김태우 전 양산시의원, 3년 구형 - 양산신문</h3>
               <p class="date">2025-09-26 07:48</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119502" target="_blank" class="news-link">
-              <h3>동원과기대 야구부와 격돌…최강야구 개막전</h3>
+              <h3>동원과기대 야구부와 격돌…최강야구 개막전 - 양산신문</h3>
               <p class="date">2025-09-26 07:47</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119552" target="_blank" class="news-link">
-              <h3>[사설]수준 높은 문화의 힘, 양산 재즈페스타가 보여주다</h3>
+              <h3>[사설]수준 높은 문화의 힘, 양산 재즈페스타가 보여주다 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119551" target="_blank" class="news-link">
-              <h3>[사설]인구 감소 '역주행' 양산, 지속 가능한 미래를 위한 준비가 필요하다</h3>
+              <h3>[사설]인구 감소 '역주행' 양산, 지속 가능한 미래를 위한 준비가 필요하다 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119545" target="_blank" class="news-link">
-              <h3>"청담 청년들이 세상의 색을 이어갑니다"</h3>
+              <h3>"청담 청년들이 세상의 색을 이어갑니다" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119532" target="_blank" class="news-link">
-              <h3>양산노일센터, 현장면접 일사천리 채용까지</h3>
+              <h3>양산노일센터, 현장면접 일사천리 채용까지 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119530" target="_blank" class="news-link">
-              <h3>낙동강협의회, 낙동강 발전 위한 관광협력 해법 모색한다</h3>
+              <h3>낙동강협의회, 낙동강 발전 위한 관광협력 해법 모색한다 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119529" target="_blank" class="news-link">
-              <h3>양산시-부산대 간호대학, 아동 건강교육 협력 강화</h3>
+              <h3>양산시-부산대 간호대학, 아동 건강교육 협력 강화 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119528" target="_blank" class="news-link">
-              <h3>양산시, 조직문화 개선 위한 뮤지컬 '변화를 부르는 사람들' 개최</h3>
+              <h3>양산시, 조직문화 개선 위한 뮤지컬 '변화를 부르는 사람들' 개최 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119527" target="_blank" class="news-link">
-              <h3>양산시 부시장, 전략산업 주요 사업장 현장행정</h3>
+              <h3>양산시 부시장, 전략산업 주요 사업장 현장행정 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119526" target="_blank" class="news-link">
-              <h3>시나브로복지관, 진로·직업박람회 '꿈 찾으러 간데이'</h3>
+              <h3>시나브로복지관, 진로·직업박람회 '꿈 찾으러 간데이' - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119525" target="_blank" class="news-link">
-              <h3>양산서 노동자 이틀 새 두명 숨져</h3>
+              <h3>양산서 노동자 이틀 새 두명 숨져 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119524" target="_blank" class="news-link">
-              <h3>양산시, 도시지역혁신 산업박람회 국토부 장관상</h3>
+              <h3>양산시, 도시지역혁신 산업박람회 국토부 장관상 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119521" target="_blank" class="news-link">
-              <h3>양산시의회, 추석 맞아 사회복지시설 위문 방문</h3>
+              <h3>양산시의회, 추석 맞아 사회복지시설 위문 방문 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119519" target="_blank" class="news-link">
-              <h3>박대조 전 의원, 인제대 산학협력단 특임교수 위촉</h3>
+              <h3>박대조 전 의원, 인제대 산학협력단 특임교수 위촉 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119516" target="_blank" class="news-link">
-              <h3>“양산시민 함께하는 탄소중립 실현해야”</h3>
+              <h3>“양산시민 함께하는 탄소중립 실현해야” - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119514" target="_blank" class="news-link">
-              <h3>양산상공회의소, 조윤범 바이올리니스트 초청 CEO세미나</h3>
+              <h3>양산상공회의소, 조윤범 바이올리니스트 초청 CEO세미나 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119513" target="_blank" class="news-link">
-              <h3>양산시가족센터·마스터요리학원 업무협약</h3>
+              <h3>양산시가족센터·마스터요리학원 업무협약 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119512" target="_blank" class="news-link">
-              <h3>덕계종합상설시장, 추석맞이 온누리상품권 환급</h3>
+              <h3>덕계종합상설시장, 추석맞이 온누리상품권 환급 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119511" target="_blank" class="news-link">
-              <h3>짐스코렘어학원 유치부, 영어스피치 전국대회 수상 석권 '눈길'</h3>
+              <h3>짐스코렘어학원 유치부, 영어스피치 전국대회 수상 석권 '눈길' - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119510" target="_blank" class="news-link">
-              <h3>[양산신문 갤러리]청담 '청년팔레트' 전 -판다-</h3>
+              <h3>[양산신문 갤러리]청담 '청년팔레트' 전 -판다- - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119509" target="_blank" class="news-link">
-              <h3>양주초 "미래를 꿈꾸는 드론세상을 만나다"</h3>
+              <h3>양주초 "미래를 꿈꾸는 드론세상을 만나다" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119508" target="_blank" class="news-link">
-              <h3>동원과기대, 지역사회 건강 증진에 '앞장'</h3>
+              <h3>동원과기대, 지역사회 건강 증진에 '앞장' - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119507" target="_blank" class="news-link">
-              <h3>어곡초 "블루베리야, 내년에 맛볼 수 있지?"</h3>
+              <h3>어곡초 "블루베리야, 내년에 맛볼 수 있지?" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119506" target="_blank" class="news-link">
-              <h3>양산교육지원청 "영재 꿈나무 모두 모여라"</h3>
+              <h3>양산교육지원청 "영재 꿈나무 모두 모여라" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119505" target="_blank" class="news-link">
-              <h3>"가는 구름이 처무 끝에 머물 듯"…우리 가락 정가를 아시나요?</h3>
+              <h3>"가는 구름이 처무 끝에 머물 듯"…우리 가락 정가를 아시나요? - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119504" target="_blank" class="news-link">
-              <h3>양산시읽는문화 "시를 읽으면 상처도 꽃이 됩니다"</h3>
+              <h3>양산시읽는문화 "시를 읽으면 상처도 꽃이 됩니다" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119503" target="_blank" class="news-link">
-              <h3>양산'의 산과 강, '진도'의 바다와 섬 "찰칵!"</h3>
+              <h3>양산'의 산과 강, '진도'의 바다와 섬 "찰칵!" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119500" target="_blank" class="news-link">
-              <h3>"양산시 승마 발전의 새로운 전환점 되길"</h3>
+              <h3>"양산시 승마 발전의 새로운 전환점 되길" - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119499" target="_blank" class="news-link">
-              <h3>[영축산이야기]화택</h3>
+              <h3>[영축산이야기]화택 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119498" target="_blank" class="news-link">
-              <h3>[기고] 성황산과 신기산성, 양산이 품은 수호의 기억</h3>
+              <h3>[기고] 성황산과 신기산성, 양산이 품은 수호의 기억 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119497" target="_blank" class="news-link">
-              <h3>[건강의학칼럼] 환절기 9월, 작은 습관이 큰 건강을 지킨다</h3>
+              <h3>[건강의학칼럼] 환절기 9월, 작은 습관이 큰 건강을 지킨다 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119496" target="_blank" class="news-link">
-              <h3>[삶의 향기] 향낭</h3>
+              <h3>[삶의 향기] 향낭 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
         
           <div class="mobile-news-item" data-media="양산신문">
-            <span class="media-badge">양산신문</span>
             <a href="https://www.yangsanilbo.com/news/articleView.html?idxno=119495" target="_blank" class="news-link">
-              <h3>[독자기고]엄마 무릎에 누우면</h3>
+              <h3>[독자기고]엄마 무릎에 누우면 - 양산신문</h3>
               <p class="date">2025-09-26 07:40</p>
             </a>
           </div>
@@ -6292,7 +5932,7 @@ CEO세미나를 개최했다. 지난 23일 양산상의 5층 컨퍼런스홀에�
     </div>
     
     <div class="update-time">
-      최종 업데이트: 2025-10-01 11:43
+      최종 업데이트: 2025-10-01 11:52
     </div>
   </div>
   
