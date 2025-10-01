@@ -31,28 +31,50 @@
     h1 {
       text-align: center;
       color: #333;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 2.5em;
     }
     
-    .header-image {
+    .header-content {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+    }
+    
+    .header-image-wrapper {
+      flex: 0 0 400px;
+    }
+    
+    .header-image-wrapper .header-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .header-image-center {
       width: 100%;
       max-width: 800px;
       height: auto;
       display: block;
-      margin: 0 auto 20px;
+      margin: 0 auto 30px;
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     
     .notice {
+      flex: 1;
       background-color: #fff3cd;
-      border: 1px solid #ffc107;
-      border-radius: 5px;
-      padding: 15px;
-      margin-bottom: 30px;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 25px;
       color: #856404;
-      text-align: center;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      line-height: 1.8;
     }
     
     .columns-container {
@@ -146,6 +168,15 @@
       .columns-container {
         grid-template-columns: repeat(2, 1fr);
       }
+      
+      .header-content {
+        flex-direction: column;
+      }
+      
+      .header-image-wrapper {
+        flex: 1 1 auto;
+        width: 100%;
+      }
     }
     
     @media (max-width: 768px) {
@@ -162,10 +193,16 @@
 <body>
   <div class="container">
     <h1>한옥문의 뉴스브리핑</h1>
-    <img src="https://i.postimg.cc/hGkD9Dxy/image.png" alt="Header Image" class="header-image">
-    <div class="notice">안녕하세요. 한옥문입니다.
+    
+      <div class="header-content">
+        <div class="header-image-wrapper">
+          <img src="https://i.postimg.cc/hGkD9Dxy/image.png" alt="Header Image" class="header-image">
+        </div>
+        <div class="notice">안녕하세요. 한옥문입니다.
 우리 양산시민들께서 필요하신 양산뉴스를 
 한번에 확인할 수 있도록 뉴스브리핑을 합니다.</div>
+      </div>
+    
     
     <div class="columns-container">
       
@@ -2539,7 +2576,7 @@ CEO세미나를 개최했다. 지난 23일 양산상의 5층 컨퍼런스홀에�
     </div>
     
     <div class="update-time">
-      최종 업데이트: 2025-10-01 10:58
+      최종 업데이트: 2025-10-01 11:11
     </div>
   </div>
 </body>
